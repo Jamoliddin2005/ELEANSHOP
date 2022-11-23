@@ -1,0 +1,41 @@
+.Home {
+  background: #fafafa;
+}
+.row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section_left,
+.section_right {
+  width: 662px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home_section {
+  padding-top: 67px;
+}
+
+.Home h4 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #272727;
+  margin-bottom: 19px;
+  font-family: "Lato", sans-serif;
+}
+
+.product_category {
+  margin-bottom: 67px;
+  cursor: pointer;
+}
+
+.mini_categories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,10 @@
+.Reviews .swiper-button-prev {
+  left: 10px;
+}
+.Reviews .swiper-button-next {
+  right: 10px;
+}
+
+.Reviews .swiper-pagination span {
+  background: #d9dbe1;
+}

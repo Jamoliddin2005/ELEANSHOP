@@ -1,6 +1,11 @@
 /* Navbar started */
 
 @font-face {
+  font-family: FuturaMd;
+  src: url(../fonts/FuturaMediumC.otf);
+  font-weight: bold;
+}
+@font-face {
   font-family: FuturaMediumC;
   src: url(../fonts/FuturaMediumC.otf);
   font-weight: bold;
@@ -120,13 +125,14 @@
 
 .Navbar_black {
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 1);
   min-height: 100vh;
   top: -130%;
-  transition: .5s;
+  transition: 0.5s;
+  z-index: 10;
 }
 .Navbar_black .left .bars {
   width: 30px;

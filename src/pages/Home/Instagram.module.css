@@ -1,0 +1,28 @@
+.Instagram_classes {
+  padding-bottom: 90px;
+}
+
+.instagram_blog {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Instagram_classes h2 {
+  margin-top: 70px;
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+}
+
+.profile_account {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,110 @@
+.Form {
+  margin-top: 92px;
+  margin-bottom: 69px;
+}
+
+.form_container {
+  width: 100%;
+  border: 1px dashed #cbc8c8;
+  padding-top: 37px;
+  padding-bottom: 47px;
+  text-align: center;
+}
+
+.form_container svg {
+  margin-bottom: 23px;
+}
+.form_container h5 {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-family: FuturaBookC;
+  margin-bottom: 39px;
+}
+.form_container form {
+  width: 896px;
+  margin: auto;
+}
+
+.form_container form .top_inputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form_container form input {
+  width: 33.5%;
+  height: 60px;
+  border: 1px solid #000000;
+  outline: none;
+  padding-left: 17px;
+  border-right: none;
+  margin-right: -10px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+  color: #9d9dad;
+  font-family: FuturaMediumC;
+  text-transform: uppercase;
+}
+.form_container form .top_inputs .time_input {
+  border-right: 1px solid #000000;
+}
+.form_container form .top_inputs span {
+  transform: translateX(-13px) translateY(3px);
+}
+.form_container form .bottom_inputs {
+  display: flex;
+  margin-top: 20px;
+}
+.form_container form .bottom_inputs textarea {
+  width: 717px;
+  height: 100px;
+  border: 1px solid #000000;
+  margin-right: 0;
+  resize: none;
+  outline: none;
+  padding: 18px 17px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+  color: #9d9dad;
+  font-family: FuturaMediumC;
+  text-transform: uppercase;
+}
+
+.form_container form .bottom_inputs button {
+  width: 180px;
+  height: 60px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-left: none;
+  background: white;
+  font-family: FuturaMediumC;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.form_container form .bottom_inputs button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.form_container form p {
+  text-align: left;
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9d9dad;
+  margin-top: 16px;
+}

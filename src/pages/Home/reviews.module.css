@@ -1,0 +1,128 @@
+
+.Reviews .swiperSlide {
+  padding-bottom: 40px;
+}
+
+.Reviews .swiperSlide p {
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 18px;
+}
+
+.Comments {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.Comments .Comment {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.Comments .Comment .Comment_Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Comments .Comment .Comment_Top .comment_top_left {
+  display: flex;
+  align-items: center;
+}
+.Comments .Comment .Comment_Top .comment_top_left a {
+  margin-left: 30px;
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #b8b5b5;
+}
+.Comments .Comment .Comment_Top .comment_top_left a span {
+  color: #000000;
+}
+
+.Comments .Comment .Comment_Top .comment_top_right p {
+  font-family: FuturaMediumC;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: right;
+  letter-spacing: 0.06em;
+  color: #b6b6b6;
+}
+
+.Comments .Comment .CommentBottom {
+  border: 1px dashed #b8b5b5;
+  width: 537px;
+  padding: 21px 18px 25px 28px;
+}
+.Comments .Comment .CommentBottom p {
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.Reviews button {
+  width: 309px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid #d7b494;
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #d7b494;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+.Reviews button::after {
+  left: -16px;
+}
+
+.Reviews button::after,
+.Reviews button::before {
+  content: "";
+  display: block;
+  width: 29px;
+  background: #d7b494;
+  height: 1px;
+  position: absolute;
+  top: 18px;
+}
+
+.Reviews button::before {
+  right: -16px;
+}
+
+.Reviews h2 {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 31px;
+}

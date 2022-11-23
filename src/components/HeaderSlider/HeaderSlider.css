@@ -1,0 +1,31 @@
+.swiper-pagination span {
+  background: rgba(255, 255, 255, 0.45);
+  opacity: 1;
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 26px;
+  height: 6px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  background: url("/public/images/HeaderSlider/right.png") no-repeat center
+    center;
+  right: 83px;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: 83px;
+}
