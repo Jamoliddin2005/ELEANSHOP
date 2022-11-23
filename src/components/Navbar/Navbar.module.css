@@ -1,0 +1,194 @@
+/* Navbar started */
+
+
+@font-face {
+    font-family: FuturaMediumC;
+    src: url(FuturaMediumC.otf);
+    font-weight: bold;
+  }
+
+.Navbar {
+  padding-top: 26px;
+  padding-bottom: 17px;
+  background: #ffffff;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.Navbar .left {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar .left .bars {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.Navbar .left .bars span {
+  width: 27px;
+  height: 1px;
+  background: #222222;
+  margin-bottom: 7px;
+}
+
+.Navbar .left .bars span:last-child {
+  margin-bottom: 0;
+  width: 20px;
+}
+
+.Navbar .left .socials {
+  display: flex;
+  align-items: center;
+  margin-left: 61px;
+}
+
+.Navbar .left .socials a {
+  margin-right: 25.5px;
+}
+
+.Navbar .left .socials a:last-child {
+  margin-right: 0;
+}
+
+/* Navbar Right started */
+
+.Navbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar .right .phone a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #222222;
+}
+
+.Navbar .right .LikeAndCard {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.Navbar .right .LikeAndCard a {
+  margin-left: 25px;
+  position: relative;
+  text-decoration: none;
+}
+.Navbar .right .LikeAndCard a:first-child {
+  margin-left: 0;
+}
+
+.Navbar .right .LikeAndCard a span {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  color: #333333;
+}
+
+/* Navbar bottom started */
+
+.Navbar .row_bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+.Navbar .row_bottom ul {
+  display: flex;
+}
+
+.Navbar .row_bottom ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 61px;
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.Navbar .row_bottom ul li:first-child a {
+  margin-left: 0;
+}
+
+.Navbar_black {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 1);
+}
+
+.Navbar_black .left .bars span {
+  background: #ffffff;
+}
+
+.Navbar_black .left .bars span:first-child {
+  transform: translateX(0) translateY(0px) rotate(45deg);
+  margin: 0;
+}
+.Navbar_black .left .bars span:last-child {
+  transform: translateX(0) translateY(-1px) rotate(-45deg);
+  margin: 0;
+  width: 27px;
+}
+.Navbar_black .left .socials a path {
+  fill: #ffffff;
+}
+.Navbar_black .right .phone a {
+  color: #ffffff;
+}
+
+.Navbar_black .right .LikeAndCard a span {
+  color: #ffffff;
+}
+
+.Navbar_black .row_bottom {
+  margin-bottom: 130px;
+}
+
+.Navbar_black .row_bottom ul li a {
+  color: #ffffff;
+}
+
+.Navbar_black .uls {
+  display: flex;
+  width: 1127px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.Navbar_black .uls ul h4 {
+  font-family: FuturaMediumC;
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 66px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Navbar_black .uls ul h4:hover {
+  color: #e1c4a9;
+}
+.Navbar_black .uls ul li {
+  margin-bottom: 31px;
+}
+
+
+.Navbar_black .uls ul li a {
+  font-family: FuturaMediumC;
+  font-size: 19px;
+  color: #ffffff;
+}

@@ -1,0 +1,22 @@
+@import url("https://fonts.cdnfonts.com/css/futura-md-bt");
+@import url("https://fonts.cdnfonts.com/css/futura-medium");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 1338px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
