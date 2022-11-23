@@ -1,11 +1,10 @@
 /* Navbar started */
 
-
 @font-face {
-    font-family: FuturaMediumC;
-    src: url(FuturaMediumC.otf);
-    font-weight: bold;
-  }
+  font-family: FuturaMediumC;
+  src: url(../fonts/FuturaMediumC.otf);
+  font-weight: bold;
+}
 
 .Navbar {
   padding-top: 26px;
@@ -122,12 +121,20 @@
 .Navbar_black {
   width: 100%;
   position: absolute;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 1);
+  min-height: 100vh;
+  top: -130%;
+  transition: .5s;
 }
-
+.Navbar_black .left .bars {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+}
 .Navbar_black .left .bars span {
   background: #ffffff;
 }
@@ -186,9 +193,12 @@
   margin-bottom: 31px;
 }
 
-
 .Navbar_black .uls ul li a {
   font-family: FuturaMediumC;
   font-size: 19px;
   color: #ffffff;
+}
+
+.navbar_active {
+  top: 0;
 }
