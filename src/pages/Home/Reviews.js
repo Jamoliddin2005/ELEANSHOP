@@ -49,7 +49,7 @@ function Reviews({ reviews }) {
       <div className={`${classes.container} container`}>
         <Swiper
           slidesPerView={5}
-          spaceBetween={30}
+          spaceBetween={10}
           slidesPerGroup={5}
           loop={true}
           pagination={{

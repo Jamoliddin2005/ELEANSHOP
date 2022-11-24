@@ -56,8 +56,10 @@ function HeaderSlider() {
       >
         {products.map((item, index) => (
           <SwiperSlide key={index} className={classes.swiperSlide}>
-            <img src={item.images} alt="" />
-            <p>{item.text}</p>
+              <img src={item.images} alt="" />
+            <div className={`${classes.containerSlider} container`}>
+              <p>{item.text}</p>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

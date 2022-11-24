@@ -124,7 +124,7 @@
 }
 
 .Navbar_black {
-  width: 100%;
+  width: 101%;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -207,4 +207,12 @@
 
 .navbar_active {
   top: 0;
+}
+
+@media (max-width: 1200px) {
+  .Navbar_black .uls {
+    height: 400px;
+    overflow-x: hidden;
+    width: 94%;
+  }
 }

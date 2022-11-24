@@ -123,4 +123,11 @@
 .Footer .Footer_Right .checkout label {
   font-size: 13px;
 }
- 
+
+/* -----------------Media started----------------- */
+
+@media (max-width: 1350px) {
+  .Footer .Footer_Left {
+    width: auto;
+  }
+}

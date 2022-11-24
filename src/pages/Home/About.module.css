@@ -77,3 +77,15 @@
 .right_about a span {
   margin-right: 10px;
 }
+
+@media (max-width: 1350px) {
+  .left_about {
+    width: 70%;
+    height: 480px;
+    left: -205px;
+  }
+  .right_about {
+    right: 30px;
+    top: 95px;
+  }
+}

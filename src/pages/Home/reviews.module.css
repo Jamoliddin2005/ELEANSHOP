@@ -3,6 +3,10 @@
   padding-bottom: 40px;
 }
 
+.Reviews .swiperSlide img{
+  width: 100%;
+}
+
 .Reviews .swiperSlide p {
   font-family: FuturaMediumC;
   font-style: normal;
