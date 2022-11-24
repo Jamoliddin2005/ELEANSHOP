@@ -108,3 +108,63 @@
   color: #9d9dad;
   margin-top: 16px;
 }
+
+@media (max-width: 930px) {
+  .form_container form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .Form {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .form_container {
+    padding-bottom: 40px;
+  }
+  .Form h5 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    width: 279px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .Form form {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Form form span {
+    display: none;
+  }
+  .Form form .top_inputs,
+  .Form form .bottom_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .Form form .top_inputs input {
+    width: 100%;
+    border: 1px solid #000000;
+    margin-bottom: 13px;
+    margin-right: 0;
+  }
+  .Form form .bottom_inputs textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 13px;
+  }
+  .Form form .bottom_inputs button {
+    width: 221px;
+    height: 45px;
+    border: 1px solid #000000;
+  }
+  .Form form p {
+    display: none;
+  }
+}

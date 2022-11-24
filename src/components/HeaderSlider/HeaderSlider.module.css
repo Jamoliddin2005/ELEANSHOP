@@ -52,3 +52,23 @@
     bottom: 110px;
   }
 }
+
+@media (max-width: 800px) {
+  .swiperSlide p {
+    right: 80px;
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiperSlide p {
+    width: 182px;
+    right: 5px;
+    bottom: 115px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+}

@@ -6,6 +6,7 @@ import Showroom from "./Showroom";
 import Form from "./Form";
 import Reviews from "./Reviews";
 import Instagram from "./Instagram";
+import Media from "react-media";
 
 function Home() {
   const [productsLeft, setProductsLeft] = useState([
@@ -151,39 +152,100 @@ function Home() {
     },
   ]);
 
+  const [productMobile, setProductMobile] = useState([
+    {
+      text: "Новинки",
+      image: "/images/Home/11 внизу 1.png",
+      mini: false,
+    },
+    {
+      text: "КОСТЮМЫ",
+      image: "/images/HeaderSlider/mobile_aksii.png",
+      mini: false,
+    },
+    {
+      text: "КОСТЮМЫ",
+      image: "/images/Home/Elean20 1.png",
+      mini: true,
+    },
+    {
+      text: "СМОКИНГИ",
+      image: "/images/Home/Elean25sajt5 1.png",
+      mini: true,
+    },
+    {
+      text: "БРЮКИ",
+      image: "/images/HeaderSlider/10сбоку2 2.png",
+      mini: false,
+    },
+    {
+      text: "ПЛАТЬЯ",
+      image: "/images/HeaderSlider/10 сбоку 2.png",
+      mini: false,
+    },
+  ]);
+
   return (
     <div className={classes.Home}>
       <HeaderSlider />
-      <section className={classes.home_section}>
-        <div className="container">
-          <div className={`${classes.row} row`}>
-            <div className={classes.section_left}>
-              {productsLeft.map((item, index) => (
-                <div className={classes.product_category} key={index}>
-                  <h4>{item.text}</h4>
-                  <img src={item.image} alt="" />
+      <Media query="(min-width:576px)">
+        {(matches) =>
+          matches ? (
+            <section className={classes.home_section}>
+              <div className="container">
+                <div className={`${classes.row} row`}>
+                  <div className={classes.section_left}>
+                    {productsLeft.map((item, index) => (
+                      <div className={classes.product_category} key={index}>
+                        <h4>{item.text}</h4>
+                        <img src={item.image} alt="" />
+                      </div>
+                    ))}
+                  </div>
+                  <div className={classes.section_right}>
+                    {productsRight.map((item, index) => (
+                      <div className={classes.product_category} key={index}>
+                        <h4>{item.text}</h4>
+                        <img src={item.image} alt="" />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
-            </div>
-            <div className={classes.section_right}>
-              {productsRight.map((item, index) => (
-                <div className={classes.product_category} key={index}>
-                  <h4>{item.text}</h4>
-                  <img src={item.image} alt="" />
+                <div className={classes.mini_categories}>
+                  {miniCategories.map((item, index) => (
+                    <div className={classes.product_category} key={index}>
+                      <h4>{item.text}</h4>
+                      <img src={item.image} alt="" />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className={classes.mini_categories}>
-            {miniCategories.map((item, index) => (
-              <div className={classes.product_category} key={index}>
-                <h4>{item.text}</h4>
-                <img src={item.image} alt="" />
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </section>
+          ) : (
+            <section className={classes.home_section}>
+              {productMobile.map((item, index) => (
+                <div
+                  className={`${classes.product_category} ${
+                    item.mini ? classes.mini : ""
+                  }`}
+                  key={index}
+                >
+                  <h4>{item.text}</h4>
+                  <img src={item.image} alt="" />
+                </div>
+              ))}
+              <div className={classes.mini_categories}>
+                {miniCategories.map((item, index) => (
+                  <div className={classes.product_category} key={index}>
+                    <h4>{item.text}</h4>
+                    <img src={item.image} alt="" />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        }
+      </Media>
       <About />
       <Showroom />
       <Form />

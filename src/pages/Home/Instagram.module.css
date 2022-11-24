@@ -26,15 +26,22 @@
 
 .profile_account {
   display: flex;
-  width: 20%;
+  width: 100%;
   flex-direction: column;
 }
 
 @media (max-width: 1350px) {
-  .profile_account {
-    width: 20%;
-  }
   .profile_account img {
     width: 100%;
+  }
+  .Carousel_Mobile {
+    padding-left: 20px;
+  }
+  .swiperSlide .profile_account img:first-child {
+    height: 410px;
+    object-fit: cover;
+  }
+  .Instagram_classes {
+    padding-bottom: 45px;
   }
 }

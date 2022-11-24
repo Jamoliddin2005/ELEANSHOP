@@ -86,3 +86,15 @@
     top: -70px;
   }
 }
+
+
+
+@media(max-width:576px){
+  .Fixed .fixed_top {
+    display: none;
+  }
+  .Fixed {
+    right: 20px;
+    bottom: 30px;
+  }
+}

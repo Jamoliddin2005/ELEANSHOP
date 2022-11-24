@@ -19,6 +19,7 @@
 
 .row {
   justify-content: space-between;
+  padding: 0 14px;
 }
 
 .Navbar .left {
@@ -209,6 +210,10 @@
   top: 0;
 }
 
+.containerMobile {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .Navbar_black .uls {
     height: 400px;
@@ -217,15 +222,278 @@
   }
 }
 
-
-
 @media (max-width: 1230px) {
-  .Navbar .row_bottom ul{
+  .Navbar .row_bottom ul {
     width: 100%;
     align-items: center;
     justify-content: space-between;
   }
   .Navbar .row_bottom ul li a {
     margin-left: 0;
-  }  
+  }
+}
+
+@media (max-width: 800px) {
+  .Navbar .row_bottom ul {
+    width: 90%;
+  }
+  .Navbar .row_bottom ul li:nth-child(6),
+  .Navbar .row_bottom ul li:nth-child(7) {
+    display: none;
+  }
+  .Navbar .left .socials,
+  .Navbar .right .LikeAndCard {
+    margin-left: 30px;
+  }
+
+  .Navbar_black .uls ul:last-child {
+    display: none;
+  }
+  .Navbar_black {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .Navbar .right .LikeAndCard a:first-child {
+    display: none;
+  }
+  .Navbar .left .socials {
+    margin-left: 0;
+  }
+  .Navbar .right .LikeAndCard {
+    margin-right: 6px;
+  }
+  .Navbar .left .socials,
+  .Navbar .right .LikeAndCard {
+    margin-left: 13px;
+  }
+  .Navbar .right .LikeAndCard a {
+    margin-left: 0;
+  }
+}
+.navbar_mobile {
+  display: none;
+}
+
+.navbarMobileActive {
+  left: 0;
+}
+
+.navbar_mobile .navbar_top_mobile .left {
+  display: flex;
+  align-items: center;
+}
+.navbar_mobile .navbar_top_mobile .left .bars {
+  width: 17.69px;
+  height: 16.36px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 26px;
+}
+.navbar_mobile .navbar_top_mobile .left a {
+  height: 16.36px;
+  position: relative;
+}
+.navbar_mobile .navbar_top_mobile .left a span,
+.navbar_mobile .navbar_top_mobile .right .LikeAndCard a span {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  color: #ffffff;
+}
+
+.navbar_mobile .bars span {
+  width: 25px;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  cursor: pointer;
+}
+.navbar_mobile .bars span:first-child {
+  transform: rotate(45deg);
+}
+.navbar_mobile .bars span:last-child {
+  transform: rotate(-45deg) translateY(-0.5px) translateX(1px);
+}
+
+.navbar_mobile .navbar_top_mobile .right .LikeAndCard a {
+  position: relative;
+}
+
+.navbar_mobile .navbar_top_mobile .right .LikeAndCard a span {
+  top: -14px;
+}
+
+.Accordions {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 37px;
+}
+
+.Accordion_big_div {
+  height: 60%;
+  overflow: scroll;
+}
+
+.btn_accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+.btn_accordion h4 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.accordion_body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  margin-left: 15px;
+}
+.AccordionBody {
+  transition-timing-function: unset !important;
+}
+
+.navbar_mobile_bottom {
+  position: fixed;
+  padding: 20px 21px 20px 20px;
+  bottom: 0;
+  background: #e1c4a9;
+  width: 100%;
+}
+
+.navbar_mobile_bottom h5 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 37px;
+}
+
+.navbar_mobile_bottom ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_mobile_bottom ul li {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_mobile_bottom ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-style: normal;
+  font-family: Proxima Nova;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  width: 85px;
+  height: 78px;
+}
+
+.navbar_mobile_bottom ul li a svg {
+  margin-bottom: 10px;
+}
+
+.btn_accordion svg {
+  transition: 0.2s;
+}
+
+.accordion_active_span svg {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 576px) {
+  .navbar_mobile .navbar_top_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 20px;
+    padding-left: 15px;
+  }
+  .Navbar .row_bottom {
+    display: none;
+  }
+  .Navbar .container {
+    display: none;
+  }
+  .containerMobile {
+    display: block;
+  }
+
+  .Navbar .containerMobile .right .LikeAndCard a {
+    display: block;
+  }
+  .Navbar .containerMobile .left .bars {
+    margin-right: 20px;
+  }
+  .Navbar .containerMobile .left .bars span:last-child {
+    width: 27px;
+  }
+  .Navbar .containerMobile .left a {
+    position: relative;
+    height: 16.36px;
+  }
+  .Navbar .containerMobile .left a span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    color: #333333;
+  }
+
+  .navbar_mobile {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 10;
+    background: #e1c4a9;
+    height: 100vh;
+    display: block;
+  }
+}
+
+.navbarMobileActive {
+  left: 0;
 }

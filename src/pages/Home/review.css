@@ -11,3 +11,16 @@
 .Reviews .swiper .swiper-pagination {
   bottom: 0;
 }
+
+.Showroom .swiper-pagination {
+  bottom: 40px;
+}
+.Showroom .swiper-pagination span {
+  background: #ffffff;
+}
+.Carousel_Mobile .swiper-pagination {
+  bottom: 0px;
+}
+.Carousel_Mobile .swiper-pagination span {
+  background: #ced2db;
+}

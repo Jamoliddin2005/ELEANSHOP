@@ -1,5 +1,12 @@
 import React, { useState } from "react";
+import Media from "react-media";
 import classes from "./Instagram.module.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 function Instagram() {
   const [profile, setProfile] = useState([
@@ -28,14 +35,64 @@ function Instagram() {
     <div className={classes.Instagram_classes}>
       <div className="container">
         <h2>мы в Инстаграм</h2>
-        <div className={classes.instagram_blog}>
-          {profile.map((item, index) => (
-            <div className={classes.profile_account} key={index}>
-              <img src={item.image} alt="" />
-              <img src={item.profile} alt="" />
-            </div>
-          ))}
-        </div>
+        <Media query="(min-width:576px)">
+          {(matches) =>
+            matches ? (
+              <Swiper
+                slidesPerView={5}
+                spaceBetween={10}
+                slidesPerGroup={5}
+                loop={true}
+                pagination={{
+                  clickable: true,
+                }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                {profile.map((item, index) => (
+                  <SwiperSlide key={index} className={classes.swiperSlide}>
+                    <div className={classes.profile_account} key={index}>
+                      <img src={item.image} alt="" />
+                      <img src={item.profile} alt="" />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <div className={`${classes.Carousel_Mobile} Carousel_Mobile`}>
+                <Swiper
+                  slidesPerView={1.3}
+                  spaceBetween={10}
+                  slidesPerGroup={1}
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  modules={[Pagination, Navigation]}
+                  className="mySwiper"
+                >
+                  {profile.map((item, index) => (
+                    <SwiperSlide key={index} className={classes.swiperSlide}>
+                      <div className={classes.profile_account} key={index}>
+                        <img src={item.image} alt="" />
+                        <img src={item.profile} alt="" />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            )
+          }
+        </Media>
+        <div className={classes.instagram_blog}></div>
       </div>
     </div>
   );

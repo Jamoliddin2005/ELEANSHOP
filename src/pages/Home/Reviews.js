@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./review.css";
 import { Link } from "react-router-dom";
+import Media from "react-media";
 
 SwiperCore.use([Autoplay]);
 
@@ -47,29 +48,57 @@ function Reviews({ reviews }) {
     <div className={`${classes.Reviews} Reviews`}>
       <h2>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
       <div className={`${classes.container} container`}>
-        <Swiper
-          slidesPerView={5}
-          spaceBetween={10}
-          slidesPerGroup={5}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
-        >
-          {reviews.map((item, index) => (
-            <SwiperSlide key={index} className={classes.swiperSlide}>
-              <img src={item.images} alt="" />
-              <p>{item.text}</p>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <Media query="(min-width:576px)">
+          {(matches) =>
+            matches ? (
+              <Swiper
+                slidesPerView={5}
+                spaceBetween={10}
+                slidesPerGroup={5}
+                loop={true}
+                pagination={{
+                  clickable: true,
+                }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                {reviews.map((item, index) => (
+                  <SwiperSlide key={index} className={classes.swiperSlide}>
+                    <img src={item.images} alt="" />
+                    <p>{item.text}</p>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <div className={classes.Carousel_Mobile}>
+                <Swiper
+                  slidesPerView={1.4}
+                  spaceBetween={10}
+                  slidesPerGroup={1}
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Pagination, Navigation]}
+                  className="mySwiper"
+                >
+                  {reviews.map((item, index) => (
+                    <SwiperSlide key={index} className={classes.swiperSlide}>
+                      <img src={item.images} alt="" />
+                      <p>{item.text}</p>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            )
+          }
+        </Media>
 
         <div className={classes.Comments}>
           {comments.map((item, index) => (
