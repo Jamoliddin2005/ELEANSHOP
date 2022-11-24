@@ -28,9 +28,21 @@
     margin: auto;
   }
 }
-@media (max-width: 1210px) {
+@media (max-width: 1230px) {
   .container {
     width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 1060px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+@media (max-width: 996px) {
+  .container {
+    width: 98%;
     margin: auto;
   }
 }

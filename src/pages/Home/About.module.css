@@ -89,3 +89,35 @@
     top: 95px;
   }
 }
+
+@media (max-width: 1230px) {
+  .right_about {
+    width: 44%;
+    height: auto;
+    top: 48px;
+  }
+  .left_about {
+    left: -170px;
+  }
+  .left_about img {
+    width: 100%;
+  }
+  .right_about p {
+    margin-bottom: 15px;
+  }
+
+  .about_main {
+    height: 390px;
+  }
+}
+
+@media (max-width: 1131px) {
+  .right_about {
+    top: 15px;
+  }
+}
+@media (max-width: 1080px) {
+  .right_about {
+    top: 0;
+  }
+}

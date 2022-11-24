@@ -1,6 +1,6 @@
 @font-face {
   font-family: Proxima Nova;
-  src: url(../fonts/ProximaNova-Bold.ttf); 
+  src: url(../fonts/ProximaNova-Bold.ttf);
 }
 
 .Fixed {
@@ -73,4 +73,16 @@
   text-align: center;
   letter-spacing: 0.1em;
   color: #ffffff;
+}
+
+@media (max-width: 1130px) {
+  .Fixed .fixed_bottom a {
+    width: 50px;
+    height: 48px;
+  }
+
+  .Fixed .fixed_top {
+    left: 2px;
+    top: -70px;
+  }
 }

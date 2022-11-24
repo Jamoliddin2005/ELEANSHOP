@@ -1,5 +1,5 @@
 .swiper .swiper-pagination {
-  bottom: 25px ;
+  bottom: 25px;
 }
 .swiper-pagination span {
   background: rgba(255, 255, 255, 0.45);
@@ -31,4 +31,13 @@
 .swiper-button-prev {
   transform: rotate(180deg);
   left: 83px;
+}
+
+@media (max-width: 1230px) {
+  .swiper-button-prev {
+    left: 30px;
+  }
+  .swiper-button-next {
+    right: 30px;
+  }
 }

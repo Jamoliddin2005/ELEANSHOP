@@ -40,9 +40,10 @@
 @media (max-width: 1350px) {
   .Showroom .card {
     width: 33.3%;
-    height: 522px;
+    height: auto;
   }
   .Showroom .card img {
     width: 100%;
+    height: auto;
   }
 }

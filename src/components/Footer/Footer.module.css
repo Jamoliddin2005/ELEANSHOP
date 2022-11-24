@@ -131,3 +131,30 @@
     width: auto;
   }
 }
+@media (max-width: 1230px) {
+  .Footer .Footer_Right {
+    width: 269px;
+  }
+  .Footer .Footer_Center ul li {
+    margin-left: 15px;
+  }
+  .Footer .Footer_Left a:nth-child(2),
+  .Footer .Footer_Left a:nth-child(3),
+  .Footer .Footer_Left a:last-child,
+  .Footer .Footer_Center ul li a,
+  .Footer .Footer_Center .footer_center_section p,
+  .Footer .Footer_Right input,
+  .Footer .Footer_Right .checkout label,
+  .Footer .Footer_Right button {
+    font-size: 13px;
+  }
+  .Footer .Footer_Center ul {
+    margin-bottom: 30px;
+  }
+
+  .Footer .Footer_Center .footer_center_section,
+  .Footer .Footer_Left a:first-child,
+  .Footer .Footer_Left a:nth-child(3) {
+    margin-bottom: 30px;
+  }
+}

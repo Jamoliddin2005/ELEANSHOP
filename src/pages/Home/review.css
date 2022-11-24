@@ -8,3 +8,6 @@
 .Reviews .swiper-pagination span {
   background: #d9dbe1;
 }
+.Reviews .swiper .swiper-pagination {
+  bottom: 0;
+}

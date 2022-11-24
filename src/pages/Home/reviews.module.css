@@ -1,9 +1,8 @@
-
 .Reviews .swiperSlide {
   padding-bottom: 40px;
 }
 
-.Reviews .swiperSlide img{
+.Reviews .swiperSlide img {
   width: 100%;
 }
 
@@ -129,4 +128,13 @@
   letter-spacing: 0.05em;
   color: #000000;
   margin-bottom: 31px;
+}
+
+
+
+@media (max-width: 1230px) {
+  .Comments .Comment .CommentBottom {
+    width: 88%;
+    padding: 12px 12px 13px 9px;
+  }
 }

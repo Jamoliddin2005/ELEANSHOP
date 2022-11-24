@@ -216,3 +216,16 @@
     width: 94%;
   }
 }
+
+
+
+@media (max-width: 1230px) {
+  .Navbar .row_bottom ul{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Navbar .row_bottom ul li a {
+    margin-left: 0;
+  }  
+}

@@ -45,3 +45,10 @@
     height: auto;
   }
 }
+
+@media (max-width: 1230px) {
+  .swiperSlide p {
+    right: 150px;
+    bottom: 110px;
+  }
+}
