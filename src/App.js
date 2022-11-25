@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Fixed from "./components/Fixed/Fixed";
+import Catalog from "./pages/Catelog/Catalog";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Fixed />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/catalog" element={<Catalog />} />
       </Routes>
       <Footer />
     </div>
