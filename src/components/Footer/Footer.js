@@ -401,7 +401,10 @@ function Footer() {
                   </a>
                 </div>
                 <div className={classes.right}>
-                  <img src="/images/logo_black.png" alt="" />
+                  <Link to={"/"}>
+                    {" "}
+                    <img src="/images/logo_black.png" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>

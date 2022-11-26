@@ -124,6 +124,10 @@
   font-size: 13px;
 }
 
+.Footer .footer_foot .right{
+  cursor: pointer;
+}
+
 /* -----------------Media started----------------- */
 
 @media (max-width: 1350px) {
@@ -225,6 +229,7 @@
     justify-content: space-between;
     padding: 10px;
     border-top: 1px solid #e6e6e6;
+    cursor: pointer;
   }
   .btn_accordion h4 {
     font-family: FuturaMediumC;
@@ -242,6 +247,7 @@
     font-size: 15px;
     line-height: 21px;
     color: #000000;
+    cursor: pointer;
     margin-left: 10px;
   }
   .btn_accordion .accordion__span {
@@ -311,6 +317,7 @@
     position: absolute;
     right: 5px;
     top: 5px;
+    cursor: pointer;
   }
   .Footer .footer_foot {
     padding: 20px 0 29px;

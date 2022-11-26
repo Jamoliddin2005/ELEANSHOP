@@ -1,0 +1,158 @@
+.Card {
+  width: 641px;
+  min-height: 741px;
+  background: #ffffff;
+  border-radius: 0px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: -1;
+  transition: 0.2s;
+  padding: 46px 46px 50px 47px;
+}
+.Card_active {
+  z-index: 10;
+  right: 0;
+}
+
+.Card .card_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Card .card_top h4 {
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #222222;
+}
+.Card .card_top .close {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.Card .card_top .line {
+  width: 440px;
+  height: 1px;
+  background: #e0e0e0;
+}
+.Card .card_item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.Card .card_item .card_img {
+  width: 148px;
+  height: 197px;
+  margin-right: 18px;
+}
+.Card .card_item .card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Card .card_item .card_item_right {
+  width: 69%;
+}
+.Card .card_item .card_item_right .card_title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.Card .card_item .card_item_right .card_title h3 {
+  width: 255px;
+  line-height: 20px;
+}
+
+.Card .card_item .card_item_right .card_title h3,
+.Card .card_item .card_item_right .card_title span {
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #242424;
+}
+
+.Card .card_item .card_item_right .card_title span {
+  line-height: 23px;
+  text-align: right;
+}
+
+.Card .card_item .card_item_right .size_text,
+.Card .card_item .card_item_right p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #242424;
+  margin-bottom: 23px;
+  display: block;
+}
+.Card .card_item .card_item_right .size_text span {
+  font-family: FuturaBookC;
+}
+
+.Card .card_item .card_item_right p {
+  font-family: FuturaBookC;
+  margin-bottom: 10px;
+}
+
+.Card .card_item .card_item_right .card_item_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Card .card_item .card_item_right .card_item_bottom .sizes {
+  display: flex;
+}
+.Card .card_item .card_item_right .card_item_bottom .sizes .minus,
+.Card .card_item .card_item_right .card_item_bottom .sizes .num,
+.Card .card_item .card_item_right .card_item_bottom .sizes .plus {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.Card .card_item .card_item_right .card_item_bottom .sizes .num span {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #c6c6c6;
+}
+.Card .card_item .card_item_right .card_item_bottom .sizes .num {
+  border-left: none;
+  border-right: none;
+}
+
+.Card .card_item .card_item_right .card_item_bottom .delete {
+  width: 135px;
+  height: 40px;
+  border: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #c7c3c3;
+  padding: 0 12px;
+  cursor: pointer;
+}

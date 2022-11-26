@@ -26,6 +26,14 @@ body {
   flex-wrap: wrap;
 }
 
+.swiper {
+  z-index: 0;
+}
+
+.swiper.swiper-initialized {
+  z-index: 0;
+}
+
 @media (max-width: 1350px) {
   .container {
     width: 1200px;
@@ -54,6 +62,9 @@ body {
 @media (max-width: 800px) {
   .container {
     width: 95%;
+  }
+  ::-webkit-scrollbar {
+    width: 1px;
   }
 }
 @media (max-width: 576px) {

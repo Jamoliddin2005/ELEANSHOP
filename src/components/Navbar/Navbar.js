@@ -8,11 +8,12 @@ import {
   AccordionHeader,
   AccordionItem,
 } from "react-headless-accordion";
+import Card from "../Card/Card";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [navbarMobile, setNavbarMobile] = useState(false);
-
+  const [card, setCard] = useState(false);
   const data = [
     {
       title: "КОЛЛЕКЦИЯ",
@@ -208,7 +209,7 @@ function Navbar() {
 
   return (
     <>
-      <div className={`${classes.Navbar}`}>
+      <div className={`${classes.Navbar} Navbar`}>
         <div className={`${classes.container} container`}>
           <div className={`${classes.row} row`}>
             <div className={classes.left}>
@@ -311,7 +312,12 @@ function Navbar() {
                   </svg>
                   <span>0</span>
                 </Link>
-                <Link to={"/card"}>
+                <Link
+                  to={"#"}
+                  onClick={(e) => {
+                    setCard(true);
+                  }}
+                >
                   <svg
                     width="20"
                     height="22"
@@ -344,7 +350,7 @@ function Navbar() {
                       strokeMiterlimit="3.8637"
                     />
                   </svg>
-                  <span>0</span>
+                  <span>2</span>
                 </Link>
               </div>
             </div>
@@ -413,7 +419,12 @@ function Navbar() {
             </div>
             <div className={classes.right}>
               <div className={classes.LikeAndCard}>
-                <Link to={"/card"}>
+                <Link
+                  to={"#"}
+                  onClick={(e) => {
+                    setCard(true);
+                  }}
+                >
                   <svg
                     width="20"
                     height="22"
@@ -446,7 +457,7 @@ function Navbar() {
                       strokeMiterlimit="3.8637"
                     />
                   </svg>
-                  <span>0</span>
+                  <span>2</span>
                 </Link>
               </div>
             </div>
@@ -534,7 +545,12 @@ function Navbar() {
               </div>
             </div>
             <div className={classes.center}>
-              <Link to="/">
+              <Link
+                to="/"
+                onClick={(e) => {
+                  setNavbar(false);
+                }}
+              >
                 <img src="/images/logo_white.png" alt="" />
               </Link>
             </div>
@@ -560,7 +576,12 @@ function Navbar() {
 
                   <span>0</span>
                 </Link>
-                <Link to={"/card"}>
+                <Link
+                  to={"#"}
+                  onClick={(e) => {
+                    setCard(true);
+                  }}
+                >
                   <svg
                     width="21"
                     height="22"
@@ -594,7 +615,7 @@ function Navbar() {
                     />
                   </svg>
 
-                  <span>0</span>
+                  <span>2</span>
                 </Link>
               </div>
             </div>
@@ -629,28 +650,84 @@ function Navbar() {
               <h4>Категории</h4>
 
               <li>
-                <Link to={"/"}>Юбки</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Юбки
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Смокинг</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Смокинг
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Костюмы</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Костюмы
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Аксессуары</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Аксессуары
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Брюки</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Брюки
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Блузы</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Блузы
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Платья</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Платья
+                </Link>
               </li>
               <li>
-                <Link to={"/"}>Топы и жилеты</Link>
+                <Link
+                  to={"/catalog"}
+                  onClick={(e) => {
+                    setNavbar(false);
+                  }}
+                >
+                  Топы и жилеты
+                </Link>
               </li>
             </ul>
             <ul>
@@ -790,7 +867,12 @@ function Navbar() {
           </div>
           <div className={classes.right}>
             <div className={classes.LikeAndCard}>
-              <Link to={"/card"}>
+              <Link
+                to={"#"}
+                onClick={(e) => {
+                  setCard(true);
+                }}
+              >
                 <svg
                   width="20"
                   height="22"
@@ -823,7 +905,7 @@ function Navbar() {
                     strokeMiterlimit="3.8637"
                   ></path>
                 </svg>
-                <span>0</span>
+                <span>2</span>
               </Link>
             </div>
           </div>
@@ -965,6 +1047,14 @@ function Navbar() {
           </ul>
         </div>
       </div>
+
+      <div
+        className={`${classes.bg_card} ${card ? classes.bg_card_active : ""}`}
+        onClick={(e) => {
+          setCard(false);
+        }}
+      ></div>
+      <Card card={card} />
     </>
   );
 }
