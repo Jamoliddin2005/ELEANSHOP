@@ -248,8 +248,8 @@ function Home() {
       </Media>
       <About />
       <Showroom />
-      <Form />
-      <Reviews reviews={reviews} />
+      <Form SvgForm={true} />
+      <Reviews reviews={reviews} home={true} />
       <Instagram />
     </div>
   );

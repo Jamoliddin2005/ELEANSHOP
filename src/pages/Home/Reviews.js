@@ -12,7 +12,7 @@ import Media from "react-media";
 
 SwiperCore.use([Autoplay]);
 
-function Reviews({ reviews }) {
+function Reviews({ reviews, home }) {
   const [comments, setComments] = useState([
     {
       image: "/images/Home/comment.png",
@@ -46,7 +46,12 @@ function Reviews({ reviews }) {
 
   return (
     <div className={`${classes.Reviews} Reviews`}>
-      <h2>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
+      {home ? (
+        <h2>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
+      ) : (
+        <h2>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ</h2>
+      )}
+
       <div className={`${classes.container} container`}>
         <Media query="(min-width:576px)">
           {(matches) =>

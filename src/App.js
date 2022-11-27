@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Fixed from "./components/Fixed/Fixed";
 import Catalog from "./pages/Catelog/Catalog";
+import Reviews from "./pages/Reviews/Reviews";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />
+        <Route path="/reviews" element={<Reviews />} />
       </Routes>
       <Footer />
     </div>

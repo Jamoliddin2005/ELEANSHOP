@@ -1,0 +1,72 @@
+.swiperSlide {
+  position: relative;
+}
+.swiperSlide .play {
+  position: absolute;
+  bottom: 70px;
+  right: 18px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: HelveticaNeueCyr;
+  src: url(../../components/fonts/FuturaBookCRegular.otf);
+}
+
+.swiperSlide p {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #272727;
+  margin-top: 20px;
+  width: 70%;
+  height: 35px;
+}
+
+.swiperSlide img {
+  width: 100%;
+}
+
+.Reviews__top {
+  margin-bottom: 66px;
+  margin-top: 40px;
+}
+
+.Reviews h2 {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  margin-top: 70px;
+}
+
+@media (max-width: 930px) {
+  .swiperSlide .play svg {
+    width: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Reviews h2 {
+    margin-top: 40px;
+  }
+  .Reviews__top {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 0 20px;
+  }
+  .swiperSlide p {
+    position: absolute;
+    bottom: 5%;
+    left: 24px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
