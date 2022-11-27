@@ -33,6 +33,9 @@ body {
 .swiper.swiper-initialized {
   z-index: 0;
 }
+.Card ::-webkit-scrollbar {
+  width: 0;
+}
 
 @media (max-width: 1350px) {
   .container {

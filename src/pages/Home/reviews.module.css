@@ -199,3 +199,16 @@
     margin: 0 20px;
   }
 }
+
+@media (max-width: 360px) {
+  .Reviews button {
+    width: 95%;
+    margin: 0;
+    margin: auto;
+  }
+  .Reviews button::after ,
+  .Reviews button::before
+  {
+    display: none;
+  }
+}

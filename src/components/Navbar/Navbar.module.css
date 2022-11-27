@@ -448,13 +448,13 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
   transition: 0.1s;
 }
 
 .bg_card_active {
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 576px) {
@@ -514,4 +514,11 @@
 
 .navbarMobileActive {
   left: 0;
+}
+
+@media (max-width: 370px) {
+  .navbar_mobile_bottom ul li a {
+    width: 70px;
+    height: 70px;
+  }
 }

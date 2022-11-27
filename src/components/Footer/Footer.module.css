@@ -124,7 +124,7 @@
   font-size: 13px;
 }
 
-.Footer .footer_foot .right{
+.Footer .footer_foot .right {
   cursor: pointer;
 }
 
@@ -332,5 +332,11 @@
   }
   .Footer .footer_foot .left a {
     margin-right: 27px;
+  }
+}
+
+@media (max-width: 360px) {
+  .Footer .footer_foot .right img {
+    width: 100%;
   }
 }

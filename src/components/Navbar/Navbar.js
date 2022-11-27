@@ -1054,7 +1054,7 @@ function Navbar() {
           setCard(false);
         }}
       ></div>
-      <Card card={card} />
+      <Card card={card} setCard={setCard} />
     </>
   );
 }
