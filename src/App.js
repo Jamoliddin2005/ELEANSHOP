@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Fixed from "./components/Fixed/Fixed";
 import Catalog from "./pages/Catelog/Catalog";
 import Reviews from "./pages/Reviews/Reviews";
+import More from "./pages/More/More";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/more" element={<More />} />
       </Routes>
       <Footer />
     </div>
