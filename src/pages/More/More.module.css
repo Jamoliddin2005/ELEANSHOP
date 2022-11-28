@@ -10,6 +10,7 @@ main {
   position: relative;
 }
 main .row {
+  align-items: stretch;
   justify-content: space-between;
 }
 main .main_left {
@@ -57,7 +58,7 @@ main .main_right {
 }
 
 main .main_right h3 {
-  font-family: "FuturaMediumC";
+  font-family: FuturaMediumC;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -85,7 +86,7 @@ main .main_right h4 span {
 }
 
 main .main_right .size h4 {
-  font-family: "FuturaMediumC";
+  font-family: FuturaMediumC;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -137,7 +138,7 @@ main .main_right .size .size_bottom {
 }
 
 main .main_right .size .size_bottom h5 {
-  font-family: "FuturaMediumC";
+  font-family: FuturaMediumC;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -155,7 +156,7 @@ main .main_right .colors {
 }
 
 main .main_right .colors h5 {
-  font-family: "FuturaMediumC";
+  font-family: FuturaMediumC;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -179,7 +180,7 @@ main .main_right .buttons button {
   border-radius: 3px 3px 0px 0px;
   border: none;
   margin-bottom: 20px;
-  font-family: "FuturaMediumC";
+  font-family: FuturaMediumC;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -387,7 +388,7 @@ main .main_right .right_info p:nth-child(2) {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 0 42px 49px;
+  padding: 0 100px 49px;
 }
 
 .perform_item h2 {
@@ -415,4 +416,130 @@ main .main_right .right_info p:nth-child(2) {
 
 .more_bottom {
   margin-bottom: 120px;
+}
+
+@media (max-width: 1500px) {
+  main .main_left {
+    width: 65%;
+  }
+  main .main_right {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .perform_item {
+    width: 55%;
+    padding: 0;
+    right: 40px;
+    top: 5%;
+  }
+  .more_bottom .more_bottom__top .more_bottom_top__left img {
+    height: 415px;
+  }
+  .more_bottom .more_bottom__top .more_bottom_top__right {
+    width: 888px;
+    height: 415px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+  }
+  .more_bottom .more_bottom__bottom .perform_two .perform_alll {
+    width: 888px;
+    height: 415px;
+    left: -278px;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .perform_top_right h3 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .perform_top_info_one {
+    margin-left: 20px;
+  }
+  .more_bottom .more_bottom__top,
+  .more_bottom .more_bottom__bottom {
+    height: 415px;
+  }
+
+  .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo img {
+    height: 415px;
+  }
+  .perform_item h2 {
+    margin-bottom: 15px;
+  }
+
+  .perform_two .perform_top_info_one button {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .more_bottom .more_bottom__top .more_bottom_top__right {
+    position: inherit;
+    width: 50%;
+    clip-path: none;
+  }
+  .more_bottom .more_bottom__bottom .perform_two .perform_alll {
+    position: inherit;
+    width: 50%;
+    clip-path: none;
+  }
+  .perform_item {
+    width: auto;
+    padding: 30px;
+    right: 40px;
+    top: 5%;
+    position: inherit;
+  }
+  .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo {
+    right: 0;
+    position: inherit;
+  }
+}
+
+@media (max-width: 1190px) {
+  main .main_right .size .size_divs .size_items,
+  main .main_right .size .size_bottom h5 {
+    font-size: 12px;
+  }
+
+  .perform_top_info_one span {
+    margin-right: 5px;
+  }
+  .perform_top_info_one {
+    width: auto;
+  }
+  .perform_top_info_one span,
+  .perform_top_info_one p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  main .main_right .size .size_divs {
+    display: flex;
+  }
+
+  .perform_top_right h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  main .main_left .active_photo {
+    height: 700px;
+  }
+  main {
+    padding: 30px 0 25px;
+    overflow: hidden;
+  }
+  main .main_right .right_info p:nth-child(2) {
+    margin-top: 15px;
+  }
+  main .main_right .right_info p {
+    font-size: 14px;
+  }
+  main .main_right .size .size_bottom {
+    margin-bottom: 25px;
+    flex-direction: column;
+  }
 }

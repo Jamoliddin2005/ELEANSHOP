@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import classes from "./More.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import Media from "react-media";
 
 function More() {
   const [activePhoto, setActivePhoto] = useState(
@@ -12,6 +18,32 @@ function More() {
     { images: "/images/HeaderSlider/mobile_aksii.png" },
     { images: "/images/HeaderSlider/mobile_slider.png" },
   ]);
+
+  // const [otherProducts,  setOtherProducts] = useState([
+  //   const [profile, setProfile] = useState([
+  //     {
+  //       image: "/images/Home/IMG_4223 2.png",
+  //       name: "/ Платье-смокинг длинное",
+  //       price:"24 900 ₽"
+  //     },
+  //     {
+  //       image: "/images/Home/IMG_4226 1.png",
+  //       profile: "/images/Home/profile.png",
+  //     },
+  //     {
+  //       image: "/images/Home/IMG_4227 1.png",
+  //       profile: "/images/Home/profile.png",
+  //     },
+  //     {
+  //       image: "/images/Home/IMG_4234 1.png",
+  //       profile: "/images/Home/profile.png",
+  //     },
+  //     {
+  //       image: "/images/Home/IMG_4222 3.png",
+  //       profile: "/images/Home/profile.png",
+  //     },
+  //   ]);
+  // ])
 
   return (
     <div className={classes.more}>
@@ -107,7 +139,63 @@ function More() {
           </div>
         </div>
       </main>
-
+      {/* <Media query="(min-width:576px)">
+        {(matches) =>
+          matches ? (
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={10}
+              slidesPerGroup={5}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+            >
+              {profile.map((item, index) => (
+                <SwiperSlide key={index} className={classes.swiperSlide}>
+                  <div className={classes.profile_account} key={index}>
+                    <img src={item.image} alt="" />
+                    <img src={item.profile} alt="" />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          ) : (
+            <div className={`${classes.Carousel_Mobile} Carousel_Mobile`}>
+              <Swiper
+                slidesPerView={1.3}
+                spaceBetween={10}
+                slidesPerGroup={1}
+                loop={true}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                {profile.map((item, index) => (
+                  <SwiperSlide key={index} className={classes.swiperSlide}>
+                    <div className={classes.profile_account} key={index}>
+                      <img src={item.image} alt="" />
+                      <img src={item.profile} alt="" />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )
+        }
+      </Media> */}
       <section className={classes.more_bottom}>
         <div className={`${classes.container} container`}>
           <div className={classes.more_bottom__top}>
