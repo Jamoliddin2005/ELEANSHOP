@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import classes from "./Fixed.module.css";
 
 function Fixed() {
-  const WindowTop = (e) => {
+  const WindowTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
     <div className={classes.Fixed}>
       <div
         className={classes.fixed_top}
-        onClick={(e) => {
+        onClick={() => {
           WindowTop();
         }}
       >

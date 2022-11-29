@@ -216,7 +216,7 @@ function Navbar() {
             <div className={classes.left}>
               <div
                 className={classes.bars}
-                onClick={(e) => {
+                onClick={() => {
                   setNavbar(true);
                 }}
               >
@@ -315,7 +315,7 @@ function Navbar() {
                 </Link>
                 <Link
                   to={"#"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setCard(true);
                   }}
                 >
@@ -387,7 +387,7 @@ function Navbar() {
             <div className={classes.left}>
               <div
                 className={classes.bars}
-                onClick={(e) => {
+                onClick={() => {
                   setNavbarMobile(true);
                 }}
               >
@@ -422,7 +422,7 @@ function Navbar() {
               <div className={classes.LikeAndCard}>
                 <Link
                   to={"#"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setCard(true);
                   }}
                 >
@@ -475,7 +475,7 @@ function Navbar() {
             <div className={classes.left}>
               <div
                 className={classes.bars}
-                onClick={(e) => {
+                onClick={() => {
                   setNavbar(false);
                 }}
               >
@@ -548,7 +548,7 @@ function Navbar() {
             <div className={classes.center}>
               <Link
                 to="/"
-                onClick={(e) => {
+                onClick={() => {
                   setNavbar(false);
                 }}
               >
@@ -579,7 +579,7 @@ function Navbar() {
                 </Link>
                 <Link
                   to={"#"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setCard(true);
                   }}
                 >
@@ -653,7 +653,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -663,7 +663,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -673,7 +673,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -683,7 +683,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -693,7 +693,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -703,7 +703,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -713,7 +713,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -723,7 +723,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -837,7 +837,7 @@ function Navbar() {
           <div className={classes.left}>
             <div
               className={classes.bars}
-              onClick={(e) => {
+              onClick={() => {
                 setNavbarMobile(false);
               }}
             >
@@ -870,7 +870,7 @@ function Navbar() {
             <div className={classes.LikeAndCard}>
               <Link
                 to={"#"}
-                onClick={(e) => {
+                onClick={() => {
                   setCard(true);
                 }}
               >
@@ -1051,7 +1051,7 @@ function Navbar() {
 
       <div
         className={`${classes.bg_card} ${card ? classes.bg_card_active : ""}`}
-        onClick={(e) => {
+        onClick={() => {
           setCard(false);
         }}
       ></div>

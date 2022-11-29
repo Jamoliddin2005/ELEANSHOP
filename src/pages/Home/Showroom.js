@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Media from "react-media";
 import classes from "./Showroom.module.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import   { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react"; 
+
+import { Pagination, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -51,7 +52,10 @@ function Showroom() {
                     className="mySwiper"
                   >
                     {showRoom.map((item, index) => (
-                      <SwiperSlide key={index} className={classes.ShowroomSlide}>
+                      <SwiperSlide
+                        key={index}
+                        className={classes.ShowroomSlide}
+                      >
                         <div className={classes.card} key={index}>
                           <img src={item.image} alt="" />
                         </div>

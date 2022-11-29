@@ -20,7 +20,7 @@ function Card({ card, setCard }) {
   ]);
 
   const products = [];
-  const findProducts = (e) => {
+  const findProducts = () => {
     products.push(cardProduct);
   };
   findProducts();
@@ -37,7 +37,7 @@ function Card({ card, setCard }) {
         <span className={classes.line}></span>
         <div
           className={classes.close}
-          onClick={(e) => {
+          onClick={() => {
             setCard(false);
           }}
         >
@@ -86,7 +86,7 @@ function Card({ card, setCard }) {
                   </div>
                   <div
                     className={classes.plus}
-                    onClick={(e) => {
+                    onClick={() => {
                       PlusBtn(index, item);
                     }}
                   >
