@@ -11,7 +11,7 @@ import Media from "react-media";
 SwiperCore.use([Autoplay]);
 
 function HeaderSlider() {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       images: "/images/HeaderSlider/1.png",
       text: "ЯРКИЕ КОМПЛЕКТЫ НА ВЕЧЕРНИЕ МЕРОПРИЯТИЯ",
@@ -37,7 +37,7 @@ function HeaderSlider() {
       text: "ЯРКИЕ КОМПЛЕКТЫ НА ВЕЧЕРНИЕ МЕРОПРИЯТИЯ",
     },
   ]);
-  const [productsMobile, setProductsMobile] = useState([
+  const [productsMobile] = useState([
     {
       images: "/images/HeaderSlider/mobile_slider.png",
       text: "ЯРКИЕ КОМПЛЕКТЫ НА ВЕЧЕРНИЕ МЕРОПРИЯТИЯ",

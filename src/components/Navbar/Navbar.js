@@ -14,7 +14,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [navbarMobile, setNavbarMobile] = useState(false);
   const [card, setCard] = useState(false);
-  
+
   const data = [
     {
       title: "КОЛЛЕКЦИЯ",
@@ -216,7 +216,7 @@ function Navbar() {
             <div className={classes.left}>
               <div
                 className={classes.bars}
-                onClick={(e) => {
+                onClick={() => {
                   setNavbar(true);
                 }}
               >
@@ -297,7 +297,7 @@ function Navbar() {
                 <a href="tel:+7(495)150-14-77">+7 (495) 150 - 14 - 77</a>
               </div>
               <div className={classes.LikeAndCard}>
-                <Link to={"/likes"}>
+                <Link to={"/favorites"}>
                   <svg
                     width="25"
                     height="21"
@@ -315,7 +315,7 @@ function Navbar() {
                 </Link>
                 <Link
                   to={"#"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setCard(true);
                   }}
                 >
@@ -387,7 +387,7 @@ function Navbar() {
             <div className={classes.left}>
               <div
                 className={classes.bars}
-                onClick={(e) => {
+                onClick={() => {
                   setNavbarMobile(true);
                 }}
               >
@@ -395,7 +395,7 @@ function Navbar() {
                 <span></span>
                 <span></span>
               </div>
-              <Link to={"/likes"}>
+              <Link to={"/favorites"}>
                 <svg
                   width="22"
                   height="18"
@@ -422,7 +422,7 @@ function Navbar() {
               <div className={classes.LikeAndCard}>
                 <Link
                   to={"#"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setCard(true);
                   }}
                 >
@@ -475,7 +475,7 @@ function Navbar() {
             <div className={classes.left}>
               <div
                 className={classes.bars}
-                onClick={(e) => {
+                onClick={() => {
                   setNavbar(false);
                 }}
               >
@@ -548,7 +548,7 @@ function Navbar() {
             <div className={classes.center}>
               <Link
                 to="/"
-                onClick={(e) => {
+                onClick={() => {
                   setNavbar(false);
                 }}
               >
@@ -560,7 +560,7 @@ function Navbar() {
                 <a href="tel:+7(495)150-14-77">+7 (495) 150 - 14 - 77</a>
               </div>
               <div className={classes.LikeAndCard}>
-                <Link to={"/likes"}>
+                <Link to={"/favorites"}>
                   <svg
                     width="25"
                     height="21"
@@ -579,7 +579,7 @@ function Navbar() {
                 </Link>
                 <Link
                   to={"#"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setCard(true);
                   }}
                 >
@@ -653,7 +653,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -663,7 +663,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -673,7 +673,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -683,7 +683,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -693,7 +693,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -703,7 +703,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -713,7 +713,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -723,7 +723,7 @@ function Navbar() {
               <li>
                 <Link
                   to={"/catalog"}
-                  onClick={(e) => {
+                  onClick={() => {
                     setNavbar(false);
                   }}
                 >
@@ -837,14 +837,14 @@ function Navbar() {
           <div className={classes.left}>
             <div
               className={classes.bars}
-              onClick={(e) => {
+              onClick={() => {
                 setNavbarMobile(false);
               }}
             >
               <span></span>
               <span></span>
             </div>
-            <Link to={"/likes"}>
+            <Link to={"/favorites"}>
               <svg
                 width="22"
                 height="18"
@@ -870,7 +870,7 @@ function Navbar() {
             <div className={classes.LikeAndCard}>
               <Link
                 to={"#"}
-                onClick={(e) => {
+                onClick={() => {
                   setCard(true);
                 }}
               >
@@ -1051,7 +1051,7 @@ function Navbar() {
 
       <div
         className={`${classes.bg_card} ${card ? classes.bg_card_active : ""}`}
-        onClick={(e) => {
+        onClick={() => {
           setCard(false);
         }}
       ></div>
