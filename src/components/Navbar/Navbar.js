@@ -14,6 +14,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [navbarMobile, setNavbarMobile] = useState(false);
   const [card, setCard] = useState(false);
+  
   const data = [
     {
       title: "КОЛЛЕКЦИЯ",
@@ -373,7 +374,7 @@ function Navbar() {
                 <Link to={"/news"}>О БРЕНДЕ</Link>
               </li>
               <li>
-                <Link to={"/news"}>ШОУРУМ</Link>
+                <Link to={"/showroom"}>ШОУРУМ</Link>
               </li>
               <li>
                 <Link to={"/news"}>КОНТАКТЫ</Link>
@@ -638,7 +639,7 @@ function Navbar() {
                 <Link to={"/news"}>О БРЕНДЕ</Link>
               </li>
               <li>
-                <Link to={"/news"}>ШОУРУМ</Link>
+                <Link to={"/showroom"}>ШОУРУМ</Link>
               </li>
               <li>
                 <Link to={"/news"}>КОНТАКТЫ</Link>
