@@ -296,12 +296,13 @@ function Footer() {
 
                         <AccordionBody className={classes.AccordionBody}>
                           {item.content.map((item, index) => (
-                            <li
+                            <Link
+                              to={item.href}
                               className={`${classes.accordion_body} accordion-body`}
                               key={index}
                             >
                               {item.content}
-                            </li>
+                            </Link>
                           ))}
                         </AccordionBody>
                       </>

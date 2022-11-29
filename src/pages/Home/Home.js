@@ -7,6 +7,7 @@ import Form from "./Form";
 import Reviews from "./Reviews";
 import Instagram from "./Instagram";
 import Media from "react-media";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [productsLeft, setProductsLeft] = useState([
@@ -196,27 +197,39 @@ function Home() {
                 <div className={`${classes.row} row`}>
                   <div className={classes.section_left}>
                     {productsLeft.map((item, index) => (
-                      <div className={classes.product_category} key={index}>
+                      <Link
+                        to={"/more"}
+                        className={classes.product_category}
+                        key={index}
+                      >
                         <h4>{item.text}</h4>
                         <img src={item.image} alt="" />
-                      </div>
+                      </Link>
                     ))}
                   </div>
                   <div className={classes.section_right}>
                     {productsRight.map((item, index) => (
-                      <div className={classes.product_category} key={index}>
+                      <Link
+                        to={"/more"}
+                        className={classes.product_category}
+                        key={index}
+                      >
                         <h4>{item.text}</h4>
                         <img src={item.image} alt="" />
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
                 <div className={classes.mini_categories}>
                   {miniCategories.map((item, index) => (
-                    <div className={classes.product_category} key={index}>
+                    <Link
+                      to={"/more"}
+                      className={classes.product_category}
+                      key={index}
+                    >
                       <h4>{item.text}</h4>
                       <img src={item.image} alt="" />
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -224,7 +237,8 @@ function Home() {
           ) : (
             <section className={classes.home_section}>
               {productMobile.map((item, index) => (
-                <div
+                <Link
+                  to={"/more"}
                   className={`${classes.product_category} ${
                     item.mini ? classes.mini : ""
                   }`}
@@ -232,14 +246,14 @@ function Home() {
                 >
                   <h4>{item.text}</h4>
                   <img src={item.image} alt="" />
-                </div>
+                </Link>
               ))}
               <div className={classes.mini_categories}>
                 {miniCategories.map((item, index) => (
-                  <div className={classes.product_category} key={index}>
+                  <Link to={"/more"} className={classes.product_category} key={index}>
                     <h4>{item.text}</h4>
                     <img src={item.image} alt="" />
-                  </div>
+                  </Link>
                 ))}
               </div>
             </section>

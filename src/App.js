@@ -7,6 +7,7 @@ import Fixed from "./components/Fixed/Fixed";
 import Catalog from "./pages/Catelog/Catalog";
 import Reviews from "./pages/Reviews/Reviews";
 import More from "./pages/More/More";
+import ShowroomPage from "./pages/Showroom/Showroom";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/more" element={<More />} />
+        <Route path="/showroom" element={<ShowroomPage />} />
       </Routes>
       <Footer />
     </div>

@@ -374,7 +374,7 @@ function Navbar() {
                 <Link to={"/news"}>О БРЕНДЕ</Link>
               </li>
               <li>
-                <Link to={"/news"}>ШОУРУМ</Link>
+                <Link to={"/showroom"}>ШОУРУМ</Link>
               </li>
               <li>
                 <Link to={"/news"}>КОНТАКТЫ</Link>
@@ -639,7 +639,7 @@ function Navbar() {
                 <Link to={"/news"}>О БРЕНДЕ</Link>
               </li>
               <li>
-                <Link to={"/news"}>ШОУРУМ</Link>
+                <Link to={"/showroom"}>ШОУРУМ</Link>
               </li>
               <li>
                 <Link to={"/news"}>КОНТАКТЫ</Link>

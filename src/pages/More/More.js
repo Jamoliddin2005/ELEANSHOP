@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./More.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import  { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
