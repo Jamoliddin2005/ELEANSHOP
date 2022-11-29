@@ -297,7 +297,7 @@ function Navbar() {
                 <a href="tel:+7(495)150-14-77">+7 (495) 150 - 14 - 77</a>
               </div>
               <div className={classes.LikeAndCard}>
-                <Link to={"/likes"}>
+                <Link to={"/favorites"}>
                   <svg
                     width="25"
                     height="21"
@@ -395,7 +395,7 @@ function Navbar() {
                 <span></span>
                 <span></span>
               </div>
-              <Link to={"/likes"}>
+              <Link to={"/favorites"}>
                 <svg
                   width="22"
                   height="18"
@@ -560,7 +560,7 @@ function Navbar() {
                 <a href="tel:+7(495)150-14-77">+7 (495) 150 - 14 - 77</a>
               </div>
               <div className={classes.LikeAndCard}>
-                <Link to={"/likes"}>
+                <Link to={"/favorites"}>
                   <svg
                     width="25"
                     height="21"
@@ -844,7 +844,7 @@ function Navbar() {
               <span></span>
               <span></span>
             </div>
-            <Link to={"/likes"}>
+            <Link to={"/favorites"}>
               <svg
                 width="22"
                 height="18"

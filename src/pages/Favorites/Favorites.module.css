@@ -1,0 +1,290 @@
+ 
+.favorite {
+    margin-top: 70px;
+}
+  
+.favorite .favorite_title {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    text-align: center;
+    color: #272727;
+    margin-bottom: 23px;
+}
+  
+.favorite .favorite_line {
+    background: #eaeaea;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.favorite .favorite_line.bottom {
+    margin-top: 40px;
+}
+  
+.favorite .favorite_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+  
+.favorite .favorite_card {
+    display: flex;
+    align-items: center;
+}
+.favorite .favorite_card .card_info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    max-width: 304px;
+    margin-right: 130px;
+}
+  
+.favorite .favorite_card .card_info img {
+    width: 110px;
+    height: 130px;
+}
+  
+.favorite .favorite_card .card_info .info_text {
+    margin-bottom: 30px;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #242424;
+}
+  
+.favorite .favorite_card .card_form {
+    display: flex;
+    gap: 15px;
+}
+.in_card {
+    display: none;
+}
+.favorite .favorite_card .card_form textarea {
+    width: 690px;
+    height: 130px;
+    padding: 14px 16px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    color: #a29c9c;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    resize: none;
+}
+  
+.favorite .favorite_card .card_form textarea:focus {
+    outline: none;
+}
+  
+.favorite .favorite_card .card_form .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.favorite .favorite_card .card_form .buttons .btn {
+    width: 198px;
+    height: 40px;
+    border: none;
+}
+  
+.favorite .favorite_card .card_form .buttons .buy {
+    background: #e1c4a9;
+    font-family: "FuturaMediumC";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    cursor: pointer;
+}
+.media_buy,
+.mobil_delete {
+    display: none;
+}
+.media_buy {
+    background: #dddddd;
+    width: 258px;
+    height: 40px;
+    font-family: "FuturaMediumC";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    margin-top: 28px;
+}
+  
+.favorite .favorite_card .card_form .buttons .delete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    font-family: "FuturaBookC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: #c7c3c3;
+    background: #fff;
+    border: 1px solid #dadada;
+    cursor: pointer;
+}
+  
+/* send email */
+.send_email {
+    margin-bottom: 100px;
+}
+.send_email .send_title {
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+  
+.send_email .send {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.send_email .send .send_btn {
+    width: 282px;
+    height: 50px;
+    background: #242424;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    border: none;
+    color: #ffffff;
+}
+  
+.send_email .send .send_text {
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #242424;
+    max-width: 578px;
+}
+  
+@media (max-width: 1350px) {
+    .favorite .favorite_card .card_info {
+        margin-right: 30px;
+    }
+    .favorite .favorite_card .card_form textarea {
+        width: 500px;
+    }
+}
+  
+@media (max-width: 1060px) {
+    .favorite .favorite_card .card_form textarea {
+        width: 440px;
+    }
+}
+@media(max-width:930px){
+    .favorite .favorite_card .card_form textarea {
+        width: 320px;
+    }
+}
+@media (max-width: 800px) {
+    .favorite .favorite_card .card_form textarea {
+        width: 295px;
+    }
+    .favorite .favorite_card .card_info {
+        margin-right: 0;
+    }
+    .send_email .send .send_text {
+        width: 400px;
+    }
+}
+
+  
+@media (max-width: 770px) {
+    .favorite .favorite_title {
+        font-size: 21px;
+        margin-bottom: 21px;
+    }
+    .favorite .favorite_line {
+        margin-bottom: 30px;
+    }
+    .media_buy,
+    .mobil_delete {
+        display: block;
+    }
+    .media_buy {
+        margin-top: 20px;
+    }
+    .favorite .favorite_card .card_form {
+        width: 100%;
+    }
+    .favorite .favorite_card .card_form textarea {
+        width: 100%;
+    }
+    .favorite .favorite_card .card_info .info_text {
+        margin-bottom: 22px;
+        width: 188px;
+    }
+    .favorite .favorite_card {
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+    .favorite .favorite_card .card_form .buttons {
+        display: none;
+    }
+    .mobil_delete {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #676767;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .in_card {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .favorite .favorite_card .card_info img {
+        width: 100px;
+        height: 140px;
+    }
+    .send_email .send {
+        flex-direction: column;
+    }
+    .send_email .send .send_btn {
+        width: 100%;
+    }
+    .send_email .send .send_text {
+        width: 374px;
+    }
+}
+   
+@media(max-width:380px){
+    .media_buy {
+        width: 100%;
+    }
+}
