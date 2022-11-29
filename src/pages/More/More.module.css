@@ -749,7 +749,7 @@ main .main_right .right_info p:nth-child(2) {
   .more_bottom .more_bottom__top .more_bottom_top__left {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .more_bottom .more_bottom__top .more_bottom_top__left img {
     width: 65%;
@@ -803,7 +803,7 @@ main .main_right .right_info p:nth-child(2) {
   .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo img {
     width: 65%;

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Media from "react-media";
 import classes from "./Showroom.module.css";
 
-import { Swiper, SwiperSlide } from "swiper/react"; 
-
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
 import "swiper/css";
