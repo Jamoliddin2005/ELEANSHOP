@@ -8,6 +8,7 @@ import Catalog from "./pages/Catelog/Catalog";
 import Reviews from "./pages/Reviews/Reviews";
 import More from "./pages/More/More";
 import ShowroomPage from "./pages/Showroom/Showroom";
+import Favorites from "./pages/Favorites/Favorites";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/more" element={<More />} />
         <Route path="/showroom" element={<ShowroomPage />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
       <Footer />
     </div>

@@ -3,13 +3,13 @@ import Media from "react-media";
 import classes from "./Instagram.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 function Instagram() {
-  const [profile, setProfile] = useState([
+  const [profile] = useState([
     {
       image: "/images/Home/IMG_4223 2.png",
       profile: "/images/Home/profile.png",

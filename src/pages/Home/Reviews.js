@@ -13,7 +13,7 @@ import Media from "react-media";
 SwiperCore.use([Autoplay]);
 
 function Reviews({ reviews, home }) {
-  const [comments, setComments] = useState([
+  const [comments] = useState([
     {
       image: "/images/Home/comment.png",
       name: "Ирина",

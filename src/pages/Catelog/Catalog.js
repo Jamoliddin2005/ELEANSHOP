@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import classes from "./Catalog.module.css";
 
 function Catalog() {
-  const [category, setCategory] = useState([
+  const [category] = useState([
     {
       name: "Новинки",
     },
@@ -34,7 +34,7 @@ function Catalog() {
     },
   ]);
 
-  const [collaction, setCollaction] = useState([
+  const [collaction] = useState([
     {
       name: "Осень-зима 20-21",
     },
@@ -49,7 +49,7 @@ function Catalog() {
     },
   ]);
 
-  const [one, setOne] = useState([
+  const [one] = useState([
     {
       image: "/images/Catalog/slider_1.png",
       text: "/ Жакет-смокинг с лацканами",
@@ -81,7 +81,7 @@ function Catalog() {
       active: true,
     },
   ]);
-  const [twoo, setTwoo] = useState([
+  const [twoo] = useState([
     {
       image: "/images/Catalog/two_1.png",
       text: "/ Классический комплект с смокингом и жилетом",
@@ -120,7 +120,7 @@ function Catalog() {
     },
   ]);
 
-  const [three, setThree] = useState([
+  const [three] = useState([
     {
       image: "/images/Catalog/three_1.png",
       text: "/ Белый жакет смокинг",
@@ -158,7 +158,7 @@ function Catalog() {
       active: false,
     },
   ]);
-  const [four, setFour] = useState([
+  const [four] = useState([
     {
       image: "/images/Catalog/four_1.png",
       text: "/ Жакет-смокинг бархатный",
@@ -192,7 +192,7 @@ function Catalog() {
     },
   ]);
 
-  const [productMobile, setProductMobile] = useState([
+  const [productMobile] = useState([
     {
       image: "/images/Catalog/slider_1.png",
       text: "/ Жакет-смокинг с лацканами",

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "./Card.module.css";
 
 function Card({ card, setCard }) {
-  const [cardProduct, setCardProduct] = useState([
+  const [cardProduct] = useState([
     {
       image: "/images/Catalog/four_5.png",
       title: "Белый смокинг и брюки с лампасами",

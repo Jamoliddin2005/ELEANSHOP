@@ -10,7 +10,7 @@ import Media from "react-media";
 import { Link } from "react-router-dom";
 
 function Home() {
-  const [productsLeft, setProductsLeft] = useState([
+  const [productsLeft] = useState([
     {
       text: "Новинки",
       image: "/images/Home/11 внизу 1.png",
@@ -28,7 +28,7 @@ function Home() {
       active: true,
     },
   ]);
-  const [productsRight, setProductsRight] = useState([
+  const [productsRight] = useState([
     {
       text: "Акции",
       image: "/images/Home/Elean20 2.png",
@@ -47,7 +47,7 @@ function Home() {
     },
   ]);
 
-  const [miniCategories, setMiniCategories] = useState([
+  const [miniCategories] = useState([
     {
       text: "Блузы",
       image: "/images/Home/9 внизу 2.png",
@@ -70,7 +70,7 @@ function Home() {
     },
   ]);
 
-  const [reviews, setReviews] = useState([
+  const [reviews] = useState([
     {
       images: "/images/Home/IMG_4232 6.png",
       text: "Альбина Джанабаева",
@@ -153,7 +153,7 @@ function Home() {
     },
   ]);
 
-  const [productMobile, setProductMobile] = useState([
+  const [productMobile] = useState([
     {
       text: "Новинки",
       image: "/images/Home/11 внизу 1.png",
@@ -250,7 +250,11 @@ function Home() {
               ))}
               <div className={classes.mini_categories}>
                 {miniCategories.map((item, index) => (
-                  <Link to={"/more"} className={classes.product_category} key={index}>
+                  <Link
+                    to={"/more"}
+                    className={classes.product_category}
+                    key={index}
+                  >
                     <h4>{item.text}</h4>
                     <img src={item.image} alt="" />
                   </Link>
