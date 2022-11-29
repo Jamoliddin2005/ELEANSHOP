@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./More.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import  { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -49,14 +49,14 @@ function More() {
     "/images/HeaderSlider/10 сбоку 2.png"
   );
 
-  const [lists, setLists] = useState([
+  const [lists] = useState([
     { images: "/images/HeaderSlider/10 сбоку 2.png" },
     { images: "/images/HeaderSlider/10сбоку2 2.png" },
     { images: "/images/HeaderSlider/mobile_aksii.png" },
     { images: "/images/HeaderSlider/mobile_slider.png" },
   ]);
 
-  const [profile, setProfile] = useState([
+  const [profile] = useState([
     {
       image: "/images/Catalog/first_3.png",
       name: "/ Платье-смокинг длинное",
