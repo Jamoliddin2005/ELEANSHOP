@@ -6,22 +6,27 @@ main {
   padding: 50px 0 89px;
   overflow: hidden;
 }
+
 .container {
   position: relative;
 }
+
 main .row {
   align-items: stretch;
   justify-content: space-between;
 }
+
 main .main_left {
   width: 70%;
   height: auto;
   display: flex;
 }
+
 main .main_left .main_left_lists {
   display: flex;
   flex-direction: column;
 }
+
 main .main_left .main_left_lists .item {
   width: 64px;
   height: 91px;
@@ -42,11 +47,13 @@ main .main_left .active_photo {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 main .main_left .active_photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 main .main_left .main_left_lists .item img {
   width: 100%;
   height: 100%;
@@ -58,25 +65,25 @@ main .main_right {
 }
 
 main .main_right h3 {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 0.05em;
-  color: #222222;
+  color: #222;
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
 }
 
 main .main_right h4 {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 20px;
-  color: #222222;
+  color: #222;
   margin-top: 3px;
   margin-bottom: 24px;
 }
@@ -86,13 +93,13 @@ main .main_right h4 span {
 }
 
 main .main_right .size h4 {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 21px;
   margin-bottom: 15px;
-  color: #222222;
+  color: #222;
 }
 
 main .main_right .size .size_divs {
@@ -209,10 +216,10 @@ main .main_right .right_info p {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
-  line-height: 23px;
-  /* or 135% */
-
   color: #242424;
+
+  /* or 135% */
+  line-height: 23px;
 }
 
 main .main_right .right_info p:nth-child(2) {
@@ -232,12 +239,13 @@ main .main_right .right_info p:nth-child(2) {
 .perform_one .perform_top {
   width: 1620px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .perform_top_info_all {
   display: flex;
 }
+
 .perform_top_right h3 {
   font-family: "FuturaBookC";
   font-style: normal;
@@ -250,6 +258,7 @@ main .main_right .right_info p:nth-child(2) {
   margin-bottom: 33px;
   margin-left: 41px;
 }
+
 .perform_top_info_one {
   width: 235px;
   margin-left: 43px;
@@ -278,6 +287,7 @@ main .main_right .right_info p:nth-child(2) {
   margin-right: 15px;
   margin-bottom: 0;
 }
+
 .perform_info_box {
   display: flex;
 }
@@ -285,6 +295,7 @@ main .main_right .right_info p:nth-child(2) {
 .perform_bottom_left .perform_top_info_all {
   margin-right: 42px;
 }
+
 .perform_bottom_left h2 {
   font-family: FuturaBookC;
   font-weight: 400;
@@ -292,8 +303,9 @@ main .main_right .right_info p:nth-child(2) {
   line-height: 20px;
   letter-spacing: 0.05em;
   margin-top: 80px;
-  color: #ffffff;
+  color: white;
 }
+
 .perform_bottom_left .big_p {
   width: 585px;
   font-family: HelveticaNeueCyr;
@@ -302,16 +314,18 @@ main .main_right .right_info p:nth-child(2) {
   font-size: 15px;
   line-height: 22px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   letter-spacing: 0.05em;
   margin-bottom: 39px;
   margin-top: 31px;
   color: #c0a78f;
 }
+
 .perform_two .perform_top_info_one {
-  justify-content: start;
+  justify-content: flex-start;
   margin-left: 0;
 }
+
 .perform_two .perform_top_info_one button {
   width: 233px;
   height: 50px;
@@ -322,7 +336,7 @@ main .main_right .right_info p:nth-child(2) {
   text-align: center;
   letter-spacing: 0.1em;
   margin-left: 35px;
-  color: #ffffff;
+  color: white;
   border: none;
   background: #c0a78f;
   cursor: pointer;
@@ -331,15 +345,18 @@ main .main_right .right_info p:nth-child(2) {
 .more_bottom .more_bottom__top {
   display: flex;
 }
+
 .more_bottom .more_bottom__top .more_bottom_top__left {
   position: relative;
   width: 51%;
 }
+
 .more_bottom .more_bottom__top .more_bottom_top__left img {
   width: 100%;
   height: 517px;
   object-fit: cover;
 }
+
 .more_bottom .more_bottom__top .more_bottom_top__right {
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
   background: #252831;
@@ -361,14 +378,13 @@ main .main_right .right_info p:nth-child(2) {
 .more_bottom .more_bottom__bottom .perform_two .perform_alll {
   width: 980px;
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
-
   background: #252831;
   height: 517px;
   position: absolute;
   left: -300px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo {
@@ -411,7 +427,7 @@ main .main_right .right_info p:nth-child(2) {
 }
 
 .more_bottom__bottom .perform_top_info_all {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .more_bottom {
@@ -422,6 +438,7 @@ main .main_right .right_info p:nth-child(2) {
   main .main_left {
     width: 65%;
   }
+
   main .main_right {
     width: 35%;
   }
@@ -434,14 +451,17 @@ main .main_right .right_info p:nth-child(2) {
     right: 40px;
     top: 5%;
   }
+
   .more_bottom .more_bottom__top .more_bottom_top__left img {
     height: 415px;
   }
+
   .more_bottom .more_bottom__top .more_bottom_top__right {
     width: 888px;
     height: 415px;
     clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
   }
+
   .more_bottom .more_bottom__bottom .perform_two .perform_alll {
     width: 888px;
     height: 415px;
@@ -453,9 +473,11 @@ main .main_right .right_info p:nth-child(2) {
     margin-top: 20px;
     margin-left: 20px;
   }
+
   .perform_top_info_one {
     margin-left: 20px;
   }
+
   .more_bottom .more_bottom__top,
   .more_bottom .more_bottom__bottom {
     height: 415px;
@@ -464,6 +486,7 @@ main .main_right .right_info p:nth-child(2) {
   .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo img {
     height: 415px;
   }
+
   .perform_item h2 {
     margin-bottom: 15px;
   }
@@ -479,11 +502,13 @@ main .main_right .right_info p:nth-child(2) {
     width: 50%;
     clip-path: none;
   }
+
   .more_bottom .more_bottom__bottom .perform_two .perform_alll {
     position: inherit;
     width: 50%;
     clip-path: none;
   }
+
   .perform_item {
     width: auto;
     padding: 30px;
@@ -491,6 +516,7 @@ main .main_right .right_info p:nth-child(2) {
     top: 5%;
     position: inherit;
   }
+
   .more_bottom .more_bottom__bottom .perform_two .more_bottom__right_photo {
     right: 0;
     position: inherit;
@@ -506,14 +532,17 @@ main .main_right .right_info p:nth-child(2) {
   .perform_top_info_one span {
     margin-right: 5px;
   }
+
   .perform_top_info_one {
     width: auto;
   }
+
   .perform_top_info_one span,
   .perform_top_info_one p {
     font-size: 13px;
     margin-bottom: 10px;
   }
+
   main .main_right .size .size_divs {
     display: flex;
   }
@@ -528,16 +557,20 @@ main .main_right .right_info p:nth-child(2) {
   main .main_left .active_photo {
     height: 700px;
   }
+
   main {
     padding: 30px 0 25px;
     overflow: hidden;
   }
+
   main .main_right .right_info p:nth-child(2) {
     margin-top: 15px;
   }
+
   main .main_right .right_info p {
     font-size: 14px;
   }
+
   main .main_right .size .size_bottom {
     margin-bottom: 25px;
     flex-direction: column;
