@@ -3,14 +3,14 @@ import Media from "react-media";
 import classes from "./Showroom.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 function Showroom() {
-  const [showRoom, setShowRoom] = useState([
+  const [showRoom] = useState([
     {
       image: "/images/Home/photo_2021-03-01_12-42-51.png",
     },
@@ -51,7 +51,10 @@ function Showroom() {
                     className="mySwiper"
                   >
                     {showRoom.map((item, index) => (
-                      <SwiperSlide key={index} className={classes.ShowroomSlide}>
+                      <SwiperSlide
+                        key={index}
+                        className={classes.ShowroomSlide}
+                      >
                         <div className={classes.card} key={index}>
                           <img src={item.image} alt="" />
                         </div>

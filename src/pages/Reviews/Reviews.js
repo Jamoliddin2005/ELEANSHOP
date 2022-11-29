@@ -12,7 +12,7 @@ import Media from "react-media";
 SwiperCore.use([Autoplay]);
 
 function Reviews() {
-  const [reviews, setReviews] = useState([
+  const [reviews] = useState([
     {
       images: "/images/Home/IMG_4232 6.png",
       text: "Альбина Джанабаева",
@@ -95,7 +95,7 @@ function Reviews() {
     },
   ]);
 
-  const [videos, setVideos] = useState([
+  const [videos] = useState([
     {
       poster: "/images/Reviews/1.png",
       text: "Образ со смокингом",
