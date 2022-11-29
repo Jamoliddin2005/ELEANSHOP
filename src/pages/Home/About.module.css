@@ -10,7 +10,7 @@
 .about_main {
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   height: 525px;
   margin-bottom: 69px;
 }

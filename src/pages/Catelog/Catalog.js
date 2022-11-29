@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import classes from "./Catalog.module.css";
 
 function Catalog() {
-  const [category, setCategory] = useState([
+  const [category] = useState([
     {
       name: "Новинки",
     },

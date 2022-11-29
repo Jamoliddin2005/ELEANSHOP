@@ -1,8 +1,8 @@
 .Card {
   width: 641px;
   min-height: 741px;
-  background: #ffffff;
-  border-radius: 0px;
+  background: white;
+  border-radius: 0;
   position: fixed;
   top: 0;
   right: -100%;
@@ -10,6 +10,11 @@
   transition: 0.2s;
   padding: 46px 46px 50px 47px;
 }
+
+.Card ::-webkit-scrollbar {
+  width: 0;
+}
+
 .Card_active {
   z-index: 10;
   right: 0;
@@ -22,12 +27,12 @@
   width: 100%;
 }
 .Card .card_top h4 {
-  font-family: FuturaMediumC;
+  font-family: FuturaMediumC, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 21px;
-  color: #222222;
+  color: #222;
 }
 .Card .card_top .close {
   width: 12px;
@@ -261,13 +266,16 @@
   .Card .card_item .card_item_right .card_title {
     flex-direction: column;
   }
+
   .Card .card_item .card_item_right .card_title span {
     text-align: start;
   }
+
   .Card .card_item .card_item_right .card_item_bottom {
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
+
   .Card .card_item .card_item_right .card_item_bottom .delete {
     padding: 0;
     border: none;
@@ -276,16 +284,19 @@
   .Card .card_item .card_item_right .card_item_bottom .delete svg {
     display: none;
   }
+
   .Card .card_item .card_item_right .size_text,
   .Card .card_item .card_item_right p,
   .Card .card_item .card_item_right .card_title {
     margin-bottom: 10px;
     margin-top: 0;
   }
+
   .Card .card_item .card_img {
     width: 46%;
     margin-right: 0;
   }
+
   .Card .card_item .card_item_right {
     width: 52%;
   }
