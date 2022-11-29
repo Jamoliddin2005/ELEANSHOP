@@ -6,6 +6,43 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Media from "react-media";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "react-headless-accordion";
+
+const data = [
+  {
+    title: "ПАРАМЕТРЫ",
+    content: [
+      {
+        content: "ПАРАМЕТРЫ 1",
+      },
+      {
+        content: "ПАРАМЕТРЫ 2",
+      },
+      {
+        content: "ПАРАМЕТРЫ 3",
+      },
+    ],
+  },
+  {
+    title: "ДОПОЛНИТЕЛЬНО",
+    content: [
+      {
+        content: "ДОПОЛНИТЕЛЬНО 1",
+      },
+      {
+        content: "ДОПОЛНИТЕЛЬНО 2",
+      },
+      {
+        content: "ДОПОЛНИТЕЛЬНО 3",
+      },
+    ],
+  },
+];
 
 function More() {
   const [activePhoto, setActivePhoto] = useState(
@@ -19,57 +56,91 @@ function More() {
     { images: "/images/HeaderSlider/mobile_slider.png" },
   ]);
 
-  // const [otherProducts,  setOtherProducts] = useState([
-  //   const [profile, setProfile] = useState([
-  //     {
-  //       image: "/images/Home/IMG_4223 2.png",
-  //       name: "/ Платье-смокинг длинное",
-  //       price:"24 900 ₽"
-  //     },
-  //     {
-  //       image: "/images/Home/IMG_4226 1.png",
-  //       profile: "/images/Home/profile.png",
-  //     },
-  //     {
-  //       image: "/images/Home/IMG_4227 1.png",
-  //       profile: "/images/Home/profile.png",
-  //     },
-  //     {
-  //       image: "/images/Home/IMG_4234 1.png",
-  //       profile: "/images/Home/profile.png",
-  //     },
-  //     {
-  //       image: "/images/Home/IMG_4222 3.png",
-  //       profile: "/images/Home/profile.png",
-  //     },
-  //   ]);
-  // ])
+  const [profile, setProfile] = useState([
+    {
+      image: "/images/Catalog/first_3.png",
+      name: "/ Платье-смокинг длинное",
+      price: "24 900 ₽",
+    },
+    {
+      image: "/images/Catalog/two_3.png",
+      name: "/ Платье-смокинг длинное",
+      price: "24 900 ₽",
+    },
+    {
+      image: "/images/Catalog/three_3.png",
+      name: "/ Платье-смокинг длинное",
+      price: "24 900 ₽",
+    },
+    {
+      image: "/images/Catalog/four_4.png",
+      name: "/ Платье-смокинг длинное",
+      price: "24 900 ₽",
+    },
+  ]);
 
   return (
     <div className={classes.more}>
       <main>
         <div className={`${classes.container} container`}>
           <div className={`${classes.row} row`}>
-            <div className={classes.main_left}>
-              <div className={classes.main_left_lists}>
-                {lists.map((item, index) => (
-                  <div
-                    className={`${classes.item} ${
-                      activePhoto === item.images ? classes.image__active : ""
-                    }`}
-                    key={index}
-                    onClick={(e) => {
-                      setActivePhoto(item.images);
-                    }}
-                  >
-                    <img src={item.images} alt="" />
+            <Media query="(min-width:576px)">
+              {(matches) =>
+                matches ? (
+                  <>
+                    <div className={classes.main_left}>
+                      <div className={classes.main_left_lists}>
+                        {lists.map((item, index) => (
+                          <div
+                            className={`${classes.item} ${
+                              activePhoto === item.images
+                                ? classes.image__active
+                                : ""
+                            }`}
+                            key={index}
+                            onClick={(e) => {
+                              setActivePhoto(item.images);
+                            }}
+                          >
+                            <img src={item.images} alt="" />
+                          </div>
+                        ))}
+                      </div>
+                      <div className={classes.active_photo}>
+                        <img src={activePhoto} alt="" />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className={classes.main_left}>
+                    <Swiper
+                      slidesPerView={1}
+                      spaceBetween={10}
+                      slidesPerGroup={1}
+                      loop={true}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                      }}
+                      modules={[Pagination, Navigation]}
+                      className={classes.mySwiper}
+                    >
+                      {lists.map((item, index) => (
+                        <SwiperSlide
+                          key={index}
+                          className={classes.swiperSlide}
+                        >
+                          <img key={index} src={item.images} alt="" />
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
                   </div>
-                ))}
-              </div>
-              <div className={classes.active_photo}>
-                <img src={activePhoto} alt="" />
-              </div>
-            </div>
+                )
+              }
+            </Media>
             <div className={classes.main_right}>
               <h3>
                 Классическтй комплект со <br /> смокингом и желетом{" "}
@@ -135,67 +206,160 @@ function More() {
                   <span>Состав</span>: 98% шерсть, 2% эластан, отделка шелком
                 </p>
               </div>
+              <Accordion className={classes.Accordions}>
+                {data.map((item, index) => (
+                  <AccordionItem key={index}>
+                    {({ open }) => (
+                      <>
+                        <AccordionHeader className={classes.btn_accordion}>
+                          <h4
+                            className={`accordion-title ${
+                              open ? "accordion-active" : ""
+                            }`}
+                          >
+                            {item.title}
+                          </h4>
+
+                          <span
+                            className={`accordion-span ${
+                              classes.accordion__span
+                            } ${open ? classes.accordion_active_span : ""}`}
+                          >
+                            <span></span>
+                            <span></span>
+                          </span>
+                        </AccordionHeader>
+
+                        <AccordionBody className={classes.AccordionBody}>
+                          {item.content.map((item, index) => (
+                            <li
+                              className={`${classes.accordion_body} accordion-body`}
+                              key={index}
+                            >
+                              {item.content}
+                            </li>
+                          ))}
+                        </AccordionBody>
+                      </>
+                    )}
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </div>
       </main>
-      {/* <Media query="(min-width:576px)">
+      <Media query="(min-width:576px)">
         {(matches) =>
           matches ? (
-            <Swiper
-              slidesPerView={5}
-              spaceBetween={10}
-              slidesPerGroup={5}
-              loop={true}
-              pagination={{
-                clickable: true,
-              }}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-              modules={[Pagination, Navigation]}
-              className="mySwiper"
-            >
-              {profile.map((item, index) => (
-                <SwiperSlide key={index} className={classes.swiperSlide}>
-                  <div className={classes.profile_account} key={index}>
-                    <img src={item.image} alt="" />
-                    <img src={item.profile} alt="" />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <>
+              <div className={classes.containerSwipper}>
+                <h4 className={classes.text}>ВЫГЛЯДЕТЬ БЛИСТАТЕЛЬНО ПОМОЖЕТ</h4>
+                <div className={classes.inline}></div>
+                <Swiper
+                  slidesPerView={4}
+                  spaceBetween={10}
+                  slidesPerGroup={1}
+                  loop={true}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Pagination, Navigation]}
+                  className={classes.mySwiper}
+                >
+                  {profile.map((item, index) => (
+                    <SwiperSlide key={index} className={classes.swiperSlide}>
+                      <div className={classes.profile_account} key={index}>
+                        <img src={item.image} alt="" />
+                        <div className={classes.title__like}>
+                          <h5>{item.name}</h5>
+                          <span>
+                            <svg
+                              width="23"
+                              height="20"
+                              viewBox="0 0 23 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
+                                stroke="#222222"
+                                strokeMiterlimit="3.8637"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div className={classes.price__p}>
+                          <h6>{item.price}</h6>
+                          <p>Подчеркнет линию талии</p>
+                        </div>
+                        <img src={item.profile} alt="" />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </>
           ) : (
-            <div className={`${classes.Carousel_Mobile} Carousel_Mobile`}>
-              <Swiper
-                slidesPerView={1.3}
-                spaceBetween={10}
-                slidesPerGroup={1}
-                loop={true}
-                autoplay={{
-                  delay: 5000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[Pagination, Navigation]}
-                className="mySwiper"
-              >
-                {profile.map((item, index) => (
-                  <SwiperSlide key={index} className={classes.swiperSlide}>
-                    <div className={classes.profile_account} key={index}>
-                      <img src={item.image} alt="" />
-                      <img src={item.profile} alt="" />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+            <div className={classes.containerSwipper}>
+              <h4 className={classes.text}>ВЫГЛЯДЕТЬ БЛИСТАТЕЛЬНО ПОМОЖЕТ</h4>
+              <div className={classes.inline}></div>
+              <div className="container">
+                <Swiper
+                  slidesPerView={5}
+                  spaceBetween={5}
+                  slidesPerGroup={1}
+                  loop={true}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Pagination, Navigation]}
+                  className={classes.mySwiper}
+                >
+                  {profile.map((item, index) => (
+                    <SwiperSlide key={index} className={classes.swiperSlide}>
+                      <div className={classes.profile_account} key={index}>
+                        <img src={item.image} alt="" />
+                        <div className={classes.title__like}>
+                          <h5>{item.name}</h5>
+                          <span>
+                            <svg
+                              width="23"
+                              height="20"
+                              viewBox="0 0 23 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
+                                stroke="#222222"
+                                strokeMiterlimit="3.8637"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div className={classes.price__p}>
+                          <h6>{item.price}</h6>
+                          <p>Подчеркнет линию талии</p>
+                        </div>
+                        <img src={item.profile} alt="" />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
             </div>
           )
         }
-      </Media> */}
+      </Media>
       <section className={classes.more_bottom}>
         <div className={`${classes.container} container`}>
           <div className={classes.more_bottom__top}>

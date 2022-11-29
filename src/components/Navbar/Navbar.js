@@ -14,6 +14,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [navbarMobile, setNavbarMobile] = useState(false);
   const [card, setCard] = useState(false);
+  
   const data = [
     {
       title: "КОЛЛЕКЦИЯ",
