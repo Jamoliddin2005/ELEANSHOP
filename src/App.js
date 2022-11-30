@@ -9,6 +9,8 @@ import Reviews from "./pages/Reviews/Reviews";
 import More from "./pages/More/More";
 import ShowroomPage from "./pages/Showroom/Showroom";
 import Favorites from "./pages/Favorites/Favorites";
+import About from "./pages/About/About";
+import Fitting from "./pages/Fitting/Fitting";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/more" element={<More />} />
         <Route path="/showroom" element={<ShowroomPage />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/fitting" element={<Fitting />} />
       </Routes>
       <Footer />
     </div>

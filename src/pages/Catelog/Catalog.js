@@ -323,7 +323,7 @@ function Catalog() {
                       <h4>КАТЕГОРИИ</h4>
                       <ul>
                         {category.map((item, index) => (
-                          <Link to={"/"} key={index}>
+                          <Link to={"/catalog"} key={index}>
                             {item.name}
                           </Link>
                         ))}
@@ -333,7 +333,7 @@ function Catalog() {
                       <h4 className={classes.collaction_text}>КОЛЕКЦИИ</h4>
                       <ul>
                         {collaction.map((item, index) => (
-                          <Link to={"/"} key={index}>
+                          <Link to={"/catalog"} key={index}>
                             {item.name}
                           </Link>
                         ))}
@@ -343,7 +343,8 @@ function Catalog() {
                   <div className={classes.Catalog_Right}>
                     <div className={classes.Catalog_Right_one}>
                       {one.map((item, index) => (
-                        <div
+                        <Link
+                          to={"/more"}
                           className={`${classes.card} ${
                             item.active ? classes.card_active : ""
                           }`}
@@ -378,12 +379,13 @@ function Catalog() {
                               <h5>Подчеркнет линию талии</h5>
                             </div>
                           </div>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                     <div className={classes.Catalog_Right_twoo}>
                       {twoo.map((item, index) => (
-                        <div
+                        <Link
+                          to={"/more"}
                           className={`${classes.card} ${
                             item.active ? classes.card_active : ""
                           }`}
@@ -418,12 +420,13 @@ function Catalog() {
                               <h5>Подчеркнет линию талии</h5>
                             </div>
                           </div>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                     <div className={classes.Catalog_Right_three}>
                       {three.map((item, index) => (
-                        <div
+                        <Link
+                          to={"/more"}
                           className={`${classes.card} ${
                             item.active ? classes.card_active : ""
                           }`}
@@ -458,12 +461,13 @@ function Catalog() {
                               <h5>Подчеркнет линию талии</h5>
                             </div>
                           </div>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                     <div className={classes.Catalog_Right_four}>
                       {four.map((item, index) => (
-                        <div
+                        <Link
+                          to={"/more"}
                           className={`${classes.card} ${
                             item.active ? classes.card_active : ""
                           }`}
@@ -498,7 +502,7 @@ function Catalog() {
                               <h5>Подчеркнет линию талии</h5>
                             </div>
                           </div>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -506,7 +510,7 @@ function Catalog() {
               ) : (
                 <div className={classes.Catalog_Right_one}>
                   {productMobile.map((item, index) => (
-                    <div
+                    <Link to={"/more"}
                       className={`${classes.card} ${
                         item.active ? classes.card_active : ""
                       }`}
@@ -541,7 +545,7 @@ function Catalog() {
                           <h5>Подчеркнет линию талии</h5>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               )

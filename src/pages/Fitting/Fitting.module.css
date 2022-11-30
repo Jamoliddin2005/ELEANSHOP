@@ -1,0 +1,376 @@
+.fitting {
+    background: url("/public/images/bg_fitting.png") no-repeat top left;
+    padding-top: 68px;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: FuturaBookC;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #272727;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fitting_card {
+    width: 45%;
+}
+
+.fitting_card_top ul h5 {
+    margin-bottom: 20px;
+    font-family: FuturaBookC;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.fitting_card_top ul li {
+    display: flex;
+}
+
+.fitting_card_top ul li span {
+    width: 15px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: #171717;
+    margin-top: 10px;
+}
+
+.fitting_card_top ul li p {
+    width: 537px;
+    font-family: HelveticaNeueCyr;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #171717;
+    margin-bottom: 25px;
+}
+
+.fitting_card_top ul {
+    margin-bottom: 20px;
+}
+
+.size_table {
+    background: #fff;
+    padding: 38px 39px 40px 40px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+}
+
+.size_table h4 {
+    font-family: FuturaBookC;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.size_table .top_size {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.size_table .top_size span {
+    font-family: FuturaMediumC;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #222;
+}
+
+.size_table .size {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #cfd5e2;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.size_table .size span {
+    font-family: HelveticaNeueCyr;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #222222;
+}
+
+.size_table .size span span {
+    color: #c0a78f;
+    margin-left: 5px;
+}
+
+.fitting_swiper {
+    padding: 38px 39px 30px 40px;
+    background: #f9f9f9;
+    border-radius: 2px;
+}
+
+.fitting_swiper h4 {
+    font-family: FuturaBookC;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.swiperSlide {
+    position: relative;
+}
+
+.fitting_swiper img {
+    width: 100%;
+    border-radius: 3px;
+    height: 251px;
+    object-fit: cover;
+}
+
+.player {
+    position: absolute;
+    bottom: 18px;
+    cursor: pointer;
+    right: 18px;
+}
+
+.fitting_form {
+    background: #f9f9f9;
+    border-radius: 2px;
+    padding: 38px 39px 40px 40px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.fitting_form .fitting_form_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.fitting_form h4 {
+    font-family: FuturaBookC;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+form .top_inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000;
+    outline: none;
+    padding-left: 17px;
+    margin-right: -10px;
+    font-family: FuturaMediumC;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    color: #a7a7a7;
+    text-transform: uppercase;
+}
+
+form .top_inputs input {
+    width: 50%;
+    height: 60px;
+    border: 1px solid #000;
+    outline: none;
+    padding-left: 17px;
+    margin-right: -10px;
+    font-family: FuturaMediumC;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    color: #a7a7a7;
+    text-transform: uppercase;
+}
+
+form .top_inputs .time_input {
+    border-right: 1px solid #000;
+}
+
+form .top_inputs span {
+    transform: translateX(-13px) translateY(3px);
+}
+
+form .bottom_inputs {
+    display: flex;
+    margin-top: 20px;
+}
+
+form .bottom_inputs textarea {
+    width: 410px;
+    height: 130px;
+    border: 1px solid #000000;
+    margin-right: 0;
+    resize: none;
+    outline: none;
+    padding: 18px 17px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    color: #9d9dad;
+    font-family: FuturaMediumC;
+    text-transform: uppercase;
+}
+
+form .bottom_inputs button {
+    width: 181px;
+    height: 60px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-left: none;
+    background: white;
+    font-family: FuturaMediumC;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    transition: 0.3s;
+}
+
+form .bottom_inputs button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+
+
+@media(max-width:1240px) {
+    .fitting {
+        background: url("/public/images/bg_fitting.png") no-repeat top;
+        padding-top: 30px;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .fitting_card_top ul h5 {
+        margin-bottom: 15px;
+    }
+
+    .fitting_card_top ul li p {
+        margin-bottom: 15px;
+    }
+
+    .size_table {
+        padding: 28px 29px 30px 30px;
+        margin-bottom: 25px;
+    }
+
+    .fitting_swiper {
+        padding: 28px 29px 20px 30px;
+    }
+
+    .fitting_form {
+        margin-top: 25px;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media(max-width:880px) {
+    .fitting {
+        background: #fff;
+        padding-top: 30px;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    .fitting_card {
+        width: 99%;
+    }
+
+    .fitting_card_top ul li p {
+        width: 80%;
+    }
+
+    .fitting_form {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .fitting_swiper img {
+        height: 451px;
+    }
+
+    .size_table {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .fitting_swiper,
+    .fitting_form {
+        padding: 0;
+        background: #fff;
+    }
+
+}
+
+@media(max-width:576px) {
+    form .bottom_inputs textarea {
+        width: 100%;
+    }
+
+    form .bottom_inputs {
+        display: block;
+        margin-top: 20px;
+    }
+
+    form .bottom_inputs button {
+        border-left: 1px solid #000;
+        margin-top: 15px;
+    }
+
+    .fitting_swiper img {
+        height: auto;
+    }
+
+    .fitting_form .fitting_form_top {
+        flex-direction: column-reverse;
+    }
+
+    .fitting_form h4 {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+}

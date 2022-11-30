@@ -1,0 +1,92 @@
+.Advantages{
+    background: #252831;
+    padding-top: 67px;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-family: FuturaMediumC; 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px; 
+    text-align: center;
+    letter-spacing: 0.05em; 
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.row{ 
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.cards{
+    width: 26%;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.cards svg{
+    margin-bottom: 27px;
+}
+
+.cards  p{
+    font-family: HelveticaNeueCyr; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px; 
+    text-align: center;
+    letter-spacing: 0.05em; 
+    color: #C0A78F;
+}
+
+@media(max-width:976px){ 
+    .Advantages{
+        background: #252831;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    h2{ 
+        font-size: 14px;
+        line-height: 15px;   
+        margin-bottom: 30px;
+    }
+    .cards{ 
+        margin-bottom: 30px;
+    }
+    
+    .cards  p{ 
+        font-size: 12px;
+        line-height: 15px;   
+    }
+    .cards svg{
+        margin-bottom: 15px;
+        width: 32px;
+        height: 42px;
+    }
+}
+
+@media(max-width:630px){
+    .row{ 
+        flex-direction: column;
+    }   
+
+    .cards{ 
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px; 
+    }
+    .cards  p{ 
+        font-size: 14px;
+        line-height: 15px;   
+    }
+    h2{ 
+        font-size: 16px;
+        line-height: 15px;   
+        margin-bottom: 25px;
+    }
+    .cards svg{
+        margin-bottom: 15px;
+        width: 42px;
+        height: 52px;
+    }
+}

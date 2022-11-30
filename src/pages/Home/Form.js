@@ -1,9 +1,13 @@
 import React from "react";
 import classes from "./Form.module.css";
 
-function Form({ SvgForm }) {
+function Form({ SvgForm, backgroundWhite }) {
   return (
-    <div className={classes.Form}>
+    <div
+      className={`${classes.Form} ${
+        backgroundWhite ? classes.backgroundWhite : ""
+      }`}
+    >
       <div className="container">
         <div className={classes.form_container}>
           {SvgForm ? (

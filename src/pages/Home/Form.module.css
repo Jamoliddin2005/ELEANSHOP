@@ -3,6 +3,16 @@
   margin-bottom: 69px;
 }
 
+.backgroundWhite {
+  margin-top: 12px;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.backgroundWhite .form_container {
+  border: none;
+}
+
 .form_container {
   width: 100%;
   border: 1px dashed #cbc8c8;

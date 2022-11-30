@@ -371,7 +371,7 @@ function Navbar() {
                 <Link to={"/news"}>ПОКУПАТЕЛЯМ</Link>
               </li>
               <li>
-                <Link to={"/news"}>О БРЕНДЕ</Link>
+                <Link to={"/about"}>О БРЕНДЕ</Link>
               </li>
               <li>
                 <Link to={"/showroom"}>ШОУРУМ</Link>
@@ -560,7 +560,12 @@ function Navbar() {
                 <a href="tel:+7(495)150-14-77">+7 (495) 150 - 14 - 77</a>
               </div>
               <div className={classes.LikeAndCard}>
-                <Link to={"/favorites"}>
+                <Link
+                  to={"/favorites"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
                   <svg
                     width="25"
                     height="21"
@@ -624,25 +629,74 @@ function Navbar() {
           <div className={classes.row_bottom}>
             <ul>
               <li>
-                <Link to={"/news"}>НОВИНИКИ</Link>
+                <Link
+                  to={"/news"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  НОВИНИКИ
+                </Link>
               </li>
               <li>
-                <Link to={"/news"}>КАТЕГОРИИ</Link>
+                <Link
+                  to={"/news"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  КАТЕГОРИИ
+                </Link>
               </li>
               <li>
-                <Link to={"/news"}>НАШИ КОЛЛЕКЦИИ</Link>
+                <Link
+                  to={"/news"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  НАШИ КОЛЛЕКЦИИ
+                </Link>
               </li>
               <li>
-                <Link to={"/news"}>ПОКУПАТЕЛЯМ</Link>
+                <Link
+                  to={"/news"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  ПОКУПАТЕЛЯМ
+                </Link>
               </li>
               <li>
-                <Link to={"/news"}>О БРЕНДЕ</Link>
+                <Link
+                  to={"/about"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  О БРЕНДЕ
+                </Link>
               </li>
               <li>
-                <Link to={"/showroom"}>ШОУРУМ</Link>
+                <Link
+                  to={"/showroom"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  ШОУРУМ
+                </Link>
               </li>
               <li>
-                <Link to={"/news"}>КОНТАКТЫ</Link>
+                <Link
+                  to={"/news"}
+                  onClick={() => {
+                    setNavbar(false);
+                  }}
+                >
+                  КОНТАКТЫ
+                </Link>
               </li>
             </ul>
           </div>
@@ -763,7 +817,7 @@ function Navbar() {
                 <Link to={"/"}>Размерная таблица </Link>
               </li>
               <li>
-                <Link to={"/"}>Примерка </Link>
+                <Link to={"/fitting"}>Примерка </Link>
               </li>
               <li>
                 <Link to={"/"}>Оптовым</Link>
