@@ -9,6 +9,7 @@ import Reviews from "./pages/Reviews/Reviews";
 import More from "./pages/More/More";
 import ShowroomPage from "./pages/Showroom/Showroom";
 import Favorites from "./pages/Favorites/Favorites";
+import Contacts from "./pages/Contacts/Contacts";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/more" element={<More />} />
         <Route path="/showroom" element={<ShowroomPage />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
       <Footer />
     </div>

@@ -377,7 +377,7 @@ function Navbar() {
                 <Link to={"/showroom"}>ШОУРУМ</Link>
               </li>
               <li>
-                <Link to={"/news"}>КОНТАКТЫ</Link>
+                <Link to={"/contacts"}>КОНТАКТЫ</Link>
               </li>
             </ul>
           </div>
@@ -642,7 +642,7 @@ function Navbar() {
                 <Link to={"/showroom"}>ШОУРУМ</Link>
               </li>
               <li>
-                <Link to={"/news"}>КОНТАКТЫ</Link>
+                <Link to={"/contacts"}>КОНТАКТЫ</Link>
               </li>
             </ul>
           </div>
